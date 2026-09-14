@@ -3,15 +3,15 @@ import { Suspense } from "react";
 import { LoginForm } from "@/components/auth/login-form";
 
 export const metadata: Metadata = {
-  title: "Sign in | B&C Merch Store",
+  title: "Sign in | Straphanger NYC",
 };
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#f4f4f2] px-4 py-12">
+    <div className="flex min-h-screen items-center justify-center bg-[#EDE6D6] px-4 py-12">
       <Suspense
         fallback={
-          <div className="text-sm text-[#0c0c0c]/55">Loading sign in…</div>
+          <div className="text-sm text-[#0A0A0A]/55">Loading sign in…</div>
         }
       >
         <LoginForm />

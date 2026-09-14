@@ -63,7 +63,7 @@ export default function CheckoutSuccessPage() {
     <Container className="py-16 md:py-24">
       <div className="mx-auto max-w-lg text-center">
         <svg
-          className="mx-auto size-14 text-[#0d5c63]"
+          className="mx-auto size-14 text-[#FF4D00]"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -78,32 +78,32 @@ export default function CheckoutSuccessPage() {
         <h1 className="mt-6 font-display text-3xl font-bold tracking-tight md:text-4xl">
           Payment successful
         </h1>
-        <p id="cs-msg" className="mt-3 text-sm text-[#0c0c0c]/65">
+        <p id="cs-msg" className="mt-3 text-sm text-[#0A0A0A]/65">
           Demo payment completed. Your order is saved in this browser — no real
           charge was made.
         </p>
 
-        <dl className="mt-8 space-y-3 rounded-2xl border border-[#0c0c0c]/10 bg-white px-6 py-5 text-left text-sm">
+        <dl className="mt-8 space-y-3 rounded-2xl border border-[#0A0A0A]/10 bg-white px-6 py-5 text-left text-sm">
           <div className="flex justify-between gap-4">
-            <dt className="text-[#0c0c0c]/55">Order</dt>
+            <dt className="text-[#0A0A0A]/55">Order</dt>
             <dd id="cs-order" className="truncate font-medium" suppressHydrationWarning>
               —
             </dd>
           </div>
           <div className="flex justify-between gap-4">
-            <dt className="text-[#0c0c0c]/55">Payment ref</dt>
+            <dt className="text-[#0A0A0A]/55">Payment ref</dt>
             <dd id="cs-ref" className="truncate font-medium" suppressHydrationWarning>
               —
             </dd>
           </div>
           <div className="flex justify-between gap-4">
-            <dt className="text-[#0c0c0c]/55">Email</dt>
+            <dt className="text-[#0A0A0A]/55">Email</dt>
             <dd id="cs-email" className="font-medium" suppressHydrationWarning>
               —
             </dd>
           </div>
           <div className="flex justify-between gap-4">
-            <dt className="text-[#0c0c0c]/55">Total paid</dt>
+            <dt className="text-[#0A0A0A]/55">Total paid</dt>
             <dd
               id="cs-total"
               className="font-medium tabular-nums"
@@ -113,7 +113,7 @@ export default function CheckoutSuccessPage() {
             </dd>
           </div>
           <div className="flex justify-between gap-4">
-            <dt className="text-[#0c0c0c]/55">Status</dt>
+            <dt className="text-[#0A0A0A]/55">Status</dt>
             <dd className="font-medium capitalize">paid</dd>
           </div>
         </dl>

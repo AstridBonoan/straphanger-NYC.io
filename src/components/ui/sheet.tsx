@@ -111,14 +111,14 @@ function SheetContent({
       <button
         type="button"
         aria-label="Close panel"
-        className="absolute inset-0 bg-[#0c0c0c]/50"
+        className="absolute inset-0 bg-[#0A0A0A]/50"
         onClick={() => setOpen(false)}
       />
       <div
         role="dialog"
         aria-modal="true"
         className={cn(
-          "absolute bg-[#f4f4f2] p-6 shadow-lg transition-transform",
+          "absolute bg-[#EDE6D6] p-6 shadow-lg transition-transform",
           sideClasses[side],
           className,
         )}
@@ -153,7 +153,7 @@ function SheetTitle({
 }: React.HTMLAttributes<HTMLHeadingElement>) {
   return (
     <h2
-      className={cn("text-lg font-semibold text-[#0c0c0c]", className)}
+      className={cn("text-lg font-semibold text-[#0A0A0A]", className)}
       {...props}
     />
   );
@@ -164,7 +164,7 @@ function SheetDescription({
   ...props
 }: React.HTMLAttributes<HTMLParagraphElement>) {
   return (
-    <p className={cn("text-sm text-[#0c0c0c]/70", className)} {...props} />
+    <p className={cn("text-sm text-[#0A0A0A]/70", className)} {...props} />
   );
 }
 

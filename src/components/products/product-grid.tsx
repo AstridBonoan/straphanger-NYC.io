@@ -17,8 +17,8 @@ export function ProductGrid({
 }: ProductGridProps) {
   if (products.length === 0) {
     return (
-      <div className="flex flex-col items-center gap-2 rounded-lg border border-dashed border-[#0c0c0c]/15 px-6 py-20 text-center">
-        <p className="text-sm text-[#0c0c0c]/60">{emptyMessage}</p>
+      <div className="flex flex-col items-center gap-2 rounded-lg border border-dashed border-[#0A0A0A]/15 px-6 py-20 text-center">
+        <p className="text-sm text-[#0A0A0A]/60">{emptyMessage}</p>
       </div>
     );
   }

@@ -12,13 +12,13 @@ export default function ConfirmLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-full flex-col bg-[#f4f4f2] text-[#0c0c0c]">
-      <header className="border-b border-[#0c0c0c]/10 bg-[#f4f4f2]">
+    <div className="flex min-h-full flex-col bg-[#EDE6D6] text-[#0A0A0A]">
+      <header className="border-b border-[#0A0A0A]/10 bg-[#EDE6D6]">
         <div className="mx-auto flex h-16 w-full max-w-7xl items-center px-5 sm:h-20 sm:px-8 lg:px-10">
           <Link
             href="/"
             className="inline-flex shrink-0 items-center"
-            aria-label="B&C Merch Store home"
+            aria-label="Straphanger NYC home"
           >
             <BrandLogo
               variant="light"

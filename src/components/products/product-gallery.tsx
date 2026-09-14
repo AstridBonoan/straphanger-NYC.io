@@ -26,8 +26,8 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
 
   if (!active) {
     return (
-      <div className="flex aspect-[4/5] w-full items-center justify-center rounded-xl bg-[linear-gradient(135deg,#0c0c0c_0%,#0d5c63_55%,#0c0c0c_100%)]">
-        <span className="font-display text-2xl font-bold text-[#f4f4f2]/85">
+      <div className="flex aspect-[4/5] w-full items-center justify-center rounded-xl bg-[linear-gradient(135deg,#0A0A0A_0%,#FF4D00_55%,#0A0A0A_100%)]">
+        <span className="font-display text-2xl font-bold text-[#EDE6D6]/85">
           {initials}
         </span>
       </div>
@@ -36,7 +36,7 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-[#0c0c0c]/[0.04]">
+      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-[#0A0A0A]/[0.04]">
         <ProductImage
           key={active.id}
           src={active.url}
@@ -59,10 +59,10 @@ export function ProductGallery({ images, productName }: ProductGalleryProps) {
               aria-label={`View image ${index + 1} of ${sorted.length}`}
               onClick={() => setActiveIndex(index)}
               className={cn(
-                "relative size-20 shrink-0 overflow-hidden rounded-lg transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50 focus-visible:ring-offset-2",
+                "relative size-20 shrink-0 overflow-hidden rounded-lg transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2",
                 index === activeIndex
-                  ? "ring-2 ring-[#0d5c63]"
-                  : "opacity-60 ring-1 ring-[#0c0c0c]/10 hover:opacity-100",
+                  ? "ring-2 ring-[#FF4D00]"
+                  : "opacity-60 ring-1 ring-[#0A0A0A]/10 hover:opacity-100",
               )}
             >
               <ProductImage

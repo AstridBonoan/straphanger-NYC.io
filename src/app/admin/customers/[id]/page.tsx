@@ -40,7 +40,7 @@ export default async function AdminCustomerDetailPage({
       <div>
         <Link
           href="/admin/customers"
-          className="inline-flex items-center gap-1.5 text-sm text-[#0c0c0c]/60 hover:text-[#0c0c0c]"
+          className="inline-flex items-center gap-1.5 text-sm text-[#0A0A0A]/60 hover:text-[#0A0A0A]"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to customers
@@ -65,9 +65,9 @@ export default async function AdminCustomerDetailPage({
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">
-        <section className="rounded-lg border border-[#0c0c0c]/10 bg-white p-5 lg:col-span-1">
-          <h2 className="text-sm font-semibold text-[#0c0c0c]">Contact</h2>
-          <div className="mt-3 flex flex-col gap-2 text-sm text-[#0c0c0c]/70">
+        <section className="rounded-lg border border-[#0A0A0A]/10 bg-white p-5 lg:col-span-1">
+          <h2 className="text-sm font-semibold text-[#0A0A0A]">Contact</h2>
+          <div className="mt-3 flex flex-col gap-2 text-sm text-[#0A0A0A]/70">
             <p className="flex items-center gap-2">
               <Mail className="h-3.5 w-3.5 shrink-0" /> {customer.email}
             </p>
@@ -82,33 +82,33 @@ export default async function AdminCustomerDetailPage({
           </div>
         </section>
 
-        <section className="rounded-lg border border-[#0c0c0c]/10 bg-white lg:col-span-2">
-          <div className="border-b border-[#0c0c0c]/10 px-5 py-3">
-            <h2 className="text-sm font-semibold text-[#0c0c0c]">Order history</h2>
+        <section className="rounded-lg border border-[#0A0A0A]/10 bg-white lg:col-span-2">
+          <div className="border-b border-[#0A0A0A]/10 px-5 py-3">
+            <h2 className="text-sm font-semibold text-[#0A0A0A]">Order history</h2>
           </div>
           {orders.length === 0 ? (
-            <p className="px-5 py-8 text-center text-sm text-[#0c0c0c]/50">
+            <p className="px-5 py-8 text-center text-sm text-[#0A0A0A]/50">
               No orders yet.
             </p>
           ) : (
-            <ul className="divide-y divide-[#0c0c0c]/8">
+            <ul className="divide-y divide-[#0A0A0A]/8">
               {orders.map((order) => (
                 <li key={order.id} className="flex items-center justify-between gap-4 px-5 py-4">
                   <div>
                     <Link
                       href={`/admin/orders/${order.id}`}
-                      className="font-medium text-[#0d5c63] hover:underline"
+                      className="font-medium text-[#FF4D00] hover:underline"
                     >
                       #{order.id.replace("ord-", "")}
                     </Link>
-                    <p className="text-xs text-[#0c0c0c]/50">
+                    <p className="text-xs text-[#0A0A0A]/50">
                       {format(new Date(order.created_at), "MMM d, yyyy")} ·{" "}
                       {order.items?.length ?? 0} item{(order.items?.length ?? 0) === 1 ? "" : "s"}
                     </p>
                   </div>
                   <div className="flex items-center gap-3">
                     <OrderStatusBadge status={order.status} />
-                    <span className="font-medium text-[#0c0c0c]">
+                    <span className="font-medium text-[#0A0A0A]">
                       {formatPrice(order.total_cents)}
                     </span>
                   </div>

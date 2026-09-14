@@ -41,7 +41,7 @@ export function NewsletterForm({ variant = "default", className }: NewsletterFor
         role="status"
         className={cn(
           "flex items-center gap-2 text-sm font-medium",
-          isCompact ? "text-[#f4f4f2]" : "text-[#0d5c63]",
+          isCompact ? "text-[#EDE6D6]" : "text-[#FF4D00]",
           className,
         )}
       >
@@ -70,7 +70,7 @@ export function NewsletterForm({ variant = "default", className }: NewsletterFor
           aria-describedby={errors.email ? `${inputId}-error` : undefined}
           className={cn(
             isCompact &&
-              "border-[#f4f4f2]/25 bg-transparent text-[#f4f4f2] placeholder:text-[#f4f4f2]/45 focus-visible:ring-[#f4f4f2]/40",
+              "border-[#EDE6D6]/25 bg-transparent text-[#EDE6D6] placeholder:text-[#EDE6D6]/45 focus-visible:ring-[#EDE6D6]/40",
           )}
           {...register("email")}
         />

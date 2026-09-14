@@ -32,15 +32,15 @@ export function SectionHeading({
     >
       <div className={cn("flex flex-col gap-3", align === "center" && "items-center")}>
         {eyebrow ? (
-          <span className="text-xs font-semibold uppercase tracking-[0.28em] text-[#0d5c63]">
+          <span className="text-xs font-semibold uppercase tracking-[0.28em] text-[#FF4D00]">
             {eyebrow}
           </span>
         ) : null}
-        <h2 className="font-display text-3xl font-bold tracking-tight text-[#0c0c0c] sm:text-4xl">
+        <h2 className="font-display text-3xl font-bold tracking-tight text-[#0A0A0A] sm:text-4xl">
           {title}
         </h2>
         {description ? (
-          <p className="max-w-xl text-balance text-base text-[#0c0c0c]/65">
+          <p className="max-w-xl text-balance text-base text-[#0A0A0A]/65">
             {description}
           </p>
         ) : null}
@@ -48,7 +48,7 @@ export function SectionHeading({
       {cta ? (
         <Link
           href={cta.href}
-          className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-[#0c0c0c] transition-colors hover:text-[#0d5c63] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50 focus-visible:ring-offset-2 rounded-sm"
+          className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-[#0A0A0A] transition-colors hover:text-[#FF4D00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2 rounded-sm"
         >
           {cta.label}
           <ArrowUpRight

@@ -27,15 +27,15 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0c0c0c] text-[#f4f4f2]">
+    <footer className="bg-[#0A0A0A] text-[#EDE6D6]">
       <Container className="grid gap-12 py-16 sm:py-20 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div className="flex flex-col gap-4">
-          <Link href="/" className="inline-flex w-fit" aria-label="B&C Merch Store home">
-            <BrandLogo width={160} height={54} className="h-10 w-auto" />
+          <Link href="/" className="inline-flex w-fit" aria-label="Straphanger NYC home">
+            <BrandLogo width={200} height={40} className="h-8 w-auto" />
           </Link>
-          <p className="max-w-xs text-sm text-[#f4f4f2]/60">
-            Wear the brand. Build the culture. Premium streetwear essentials made for
-            everyday rotation.
+          <p className="max-w-xs text-sm text-[#EDE6D6]/60">
+            Hold on. We&rsquo;re moving. New York streetwear merch for the ride
+            between stops.
           </p>
           <div className="flex items-center gap-3 pt-2">
             {SOCIAL_LINKS.map(({ href, label, mark }) => (
@@ -45,7 +45,7 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="flex size-9 items-center justify-center rounded-full border border-[#f4f4f2]/15 text-[11px] font-semibold tracking-wide text-[#f4f4f2]/70 transition-colors hover:border-[#f4f4f2]/40 hover:text-[#f4f4f2]"
+                className="flex size-9 items-center justify-center rounded-full border border-[#EDE6D6]/15 text-[11px] font-semibold tracking-wide text-[#EDE6D6]/70 transition-colors hover:border-[#EDE6D6]/40 hover:text-[#EDE6D6]"
               >
                 {mark}
               </a>
@@ -54,7 +54,7 @@ export function SiteFooter() {
         </div>
 
         <nav aria-label="Shop">
-          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f4f4f2]/50">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#EDE6D6]/50">
             Shop
           </h3>
           <ul className="mt-4 flex flex-col gap-3">
@@ -62,7 +62,7 @@ export function SiteFooter() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-[#f4f4f2]/75 transition-colors hover:text-[#f4f4f2]"
+                  className="text-sm text-[#EDE6D6]/75 transition-colors hover:text-[#EDE6D6]"
                 >
                   {link.label}
                 </Link>
@@ -72,7 +72,7 @@ export function SiteFooter() {
         </nav>
 
         <nav aria-label="Company">
-          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f4f4f2]/50">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#EDE6D6]/50">
             Company
           </h3>
           <ul className="mt-4 flex flex-col gap-3">
@@ -80,7 +80,7 @@ export function SiteFooter() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-[#f4f4f2]/75 transition-colors hover:text-[#f4f4f2]"
+                  className="text-sm text-[#EDE6D6]/75 transition-colors hover:text-[#EDE6D6]"
                 >
                   {link.label}
                 </Link>
@@ -90,30 +90,20 @@ export function SiteFooter() {
         </nav>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f4f4f2]/50">
+          <h3 className="text-xs font-semibold uppercase tracking-[0.24em] text-[#EDE6D6]/50">
             Stay in the loop
           </h3>
-          <p className="text-sm text-[#f4f4f2]/60">
-            New drops, restocks, and studio notes — no spam, unsubscribe anytime.
+          <p className="text-sm text-[#EDE6D6]/60">
+            Night drops, restocks, and platform notes — no spam, unsubscribe anytime.
           </p>
           <NewsletterForm variant="compact" />
         </div>
       </Container>
 
-      <div className="border-t border-[#f4f4f2]/10">
-        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-[#f4f4f2]/50 sm:flex-row">
-          <p>&copy; {year} B&amp;C Merch Store. All rights reserved.</p>
-          <p>
-            Built by{" "}
-            <a
-              href="https://bandcsoftware.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-[#f4f4f2]/70 underline-offset-4 transition-colors hover:text-[#f4f4f2] hover:underline"
-            >
-              B&amp;C Software &amp; Web
-            </a>
-          </p>
+      <div className="border-t border-[#EDE6D6]/10">
+        <Container className="flex flex-col items-center justify-between gap-3 py-6 text-xs text-[#EDE6D6]/50 sm:flex-row">
+          <p>&copy; {year} Straphanger NYC. Packed in Brooklyn.</p>
+          <p>Stand clear of the closing doors.</p>
         </Container>
       </div>
     </footer>

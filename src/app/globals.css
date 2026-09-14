@@ -1,17 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4f4f2;
-  --foreground: #0c0c0c;
+  --background: #EDE6D6;
+  --foreground: #0A0A0A;
 
-  /* Brand tokens */
-  --color-ink: #0c0c0c;
-  --color-bone: #f4f4f2;
-  --color-teal: #0d5c63;
+  /* Brand tokens — asphalt, concrete, signal orange */
+  --color-ink: #0A0A0A;
+  --color-bone: #EDE6D6;
+  --color-teal: #FF4D00;
+  --color-signal: #FF4D00;
   --color-stone: #8a857c;
 
-  --font-sans: var(--font-manrope);
-  --font-display: var(--font-syne);
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-display: var(--font-oswald);
 }
 
 @theme inline {
@@ -20,6 +21,7 @@
   --color-ink: var(--color-ink);
   --color-bone: var(--color-bone);
   --color-teal: var(--color-teal);
+  --color-signal: var(--color-signal);
   --color-stone: var(--color-stone);
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);

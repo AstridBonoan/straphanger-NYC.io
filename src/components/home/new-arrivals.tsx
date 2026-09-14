@@ -9,13 +9,13 @@ export async function NewArrivals() {
   if (products.length === 0) return null;
 
   return (
-    <section className="border-t border-[#0c0c0c]/10 bg-[#0c0c0c]/[0.03] py-16 sm:py-24">
+    <section className="border-t border-[#0A0A0A]/10 bg-[#0A0A0A]/[0.03] py-16 sm:py-24">
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeading
-            eyebrow="Just Dropped"
+            eyebrow="Just dropped"
             title="New arrivals"
-            description="Fresh off the line. Limited runs — once they're gone, they're gone."
+            description="Fresh off Canal. Limited runs — once they're gone, they're gone."
             cta={{ label: "Shop new arrivals", href: "/shop?sort=newest" }}
           />
         </Reveal>

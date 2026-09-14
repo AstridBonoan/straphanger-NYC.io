@@ -11,17 +11,17 @@ export default function SignUpPage() {
   const router = useRouter();
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#f4f4f2] px-4 py-12">
-      <div className="w-full max-w-md rounded-xl border border-[#0c0c0c]/10 bg-white p-8 shadow-sm">
+    <div className="flex min-h-screen items-center justify-center bg-[#EDE6D6] px-4 py-12">
+      <div className="w-full max-w-md rounded-xl border border-[#0A0A0A]/10 bg-white p-8 shadow-sm">
         <div className="mb-6 text-center">
           <Link href="/" className="inline-flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0d5c63] text-sm font-bold text-white">
-              AC
+            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-[#FF4D00] text-sm font-bold text-[#0A0A0A]">
+              SH
             </span>
-            <span className="text-base font-semibold">B&C Merch Store</span>
+            <span className="text-base font-semibold">Straphanger NYC</span>
           </Link>
           <h1 className="mt-4 text-xl font-semibold">Create account</h1>
-          <p className="mt-1 text-sm text-[#0c0c0c]/60">
+          <p className="mt-1 text-sm text-[#0A0A0A]/60">
             Demo signup creates a local browser session for this GitHub Pages demo.
           </p>
         </div>
@@ -60,9 +60,9 @@ export default function SignUpPage() {
           <Button type="submit">Create account</Button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-[#0c0c0c]/60">
+        <p className="mt-6 text-center text-sm text-[#0A0A0A]/60">
           Already have an account?{" "}
-          <Link href="/login/" className="font-medium text-[#0d5c63] hover:underline">
+          <Link href="/login/" className="font-medium text-[#FF4D00] hover:underline">
             Sign in
           </Link>
         </p>

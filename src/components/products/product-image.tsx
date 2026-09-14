@@ -16,7 +16,7 @@ export interface ProductImageProps extends Omit<ImageProps, "onError" | "src"> {
  */
 export function ProductImage({
   src,
-  fallbackLabel = "B&C",
+  fallbackLabel = "SH",
   className,
   alt,
   ...props
@@ -29,9 +29,9 @@ export function ProductImage({
       <div
         role="img"
         aria-label={alt}
-        className="absolute inset-0 flex size-full items-center justify-center bg-[linear-gradient(135deg,#0c0c0c_0%,#0d5c63_55%,#0c0c0c_100%)]"
+        className="absolute inset-0 flex size-full items-center justify-center bg-[linear-gradient(135deg,#0A0A0A_0%,#FF4D00_55%,#0A0A0A_100%)]"
       >
-        <span className="font-display text-lg font-bold tracking-wide text-[#f4f4f2]/85">
+        <span className="font-display text-lg font-bold tracking-wide text-[#EDE6D6]/85">
           {fallbackLabel}
         </span>
       </div>

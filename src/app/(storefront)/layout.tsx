@@ -15,7 +15,7 @@ export default function StorefrontLayout({
     <>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[#0c0c0c] focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-[#f4f4f2]"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-[#0A0A0A] focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-[#EDE6D6]"
       >
         Skip to content
       </a>

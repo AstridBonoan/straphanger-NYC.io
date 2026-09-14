@@ -42,7 +42,7 @@ export function RequireAuth({
 
   if (!hydrated) {
     return (
-      <div className="flex min-h-[40vh] items-center justify-center text-sm text-[#0c0c0c]/55">
+      <div className="flex min-h-[40vh] items-center justify-center text-sm text-[#0A0A0A]/55">
         Loading…
       </div>
     );

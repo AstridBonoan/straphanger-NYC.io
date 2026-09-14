@@ -24,7 +24,7 @@ function OrdersList({ email }: { email: string }) {
     <Container className="py-10 md:py-16">
       <div className="mb-8 flex items-end justify-between gap-4">
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#0d5c63]">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#FF4D00]">
             Account
           </p>
           <h1 className="mt-2 font-display text-3xl font-bold tracking-tight">
@@ -40,9 +40,9 @@ function OrdersList({ email }: { email: string }) {
       </div>
 
       {orders.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-[#0c0c0c]/15 bg-white/50 px-6 py-16 text-center">
+        <div className="rounded-2xl border border-dashed border-[#0A0A0A]/15 bg-white/50 px-6 py-16 text-center">
           <h2 className="font-display text-xl font-semibold">No orders yet</h2>
-          <p className="mt-2 text-sm text-[#0c0c0c]/60">
+          <p className="mt-2 text-sm text-[#0A0A0A]/60">
             When you place an order, it will show up here.
           </p>
           <Link href="/shop/" className={cn(buttonVariants(), "mt-6 inline-flex")}>
@@ -50,16 +50,16 @@ function OrdersList({ email }: { email: string }) {
           </Link>
         </div>
       ) : (
-        <ul className="divide-y divide-[#0c0c0c]/10 overflow-hidden rounded-2xl border border-[#0c0c0c]/10 bg-white">
+        <ul className="divide-y divide-[#0A0A0A]/10 overflow-hidden rounded-2xl border border-[#0A0A0A]/10 bg-white">
           {orders.map((order) => (
             <li key={order.id}>
               <a
                 href={withBasePath(`/order/#id=${encodeURIComponent(order.id)}`)}
-                className="flex flex-col gap-2 px-5 py-4 transition hover:bg-[#0c0c0c]/[0.02] sm:flex-row sm:items-center sm:justify-between"
+                className="flex flex-col gap-2 px-5 py-4 transition hover:bg-[#0A0A0A]/[0.02] sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <p className="font-medium">Order {order.id}</p>
-                  <p className="text-sm text-[#0c0c0c]/55">
+                  <p className="text-sm text-[#0A0A0A]/55">
                     {new Date(order.created_at).toLocaleDateString()} ·{" "}
                     <span className="capitalize">{order.status}</span>
                   </p>

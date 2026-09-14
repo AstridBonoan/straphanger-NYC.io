@@ -13,9 +13,9 @@ export async function BestSellers() {
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeading
-            eyebrow="Proven Favorites"
+            eyebrow="Always packed"
             title="Bestsellers"
-            description="The pieces that keep selling out. Trusted staples, worn on repeat."
+            description="The pieces that keep selling out on the platform. Worn on repeat."
             cta={{ label: "Shop bestsellers", href: "/shop" }}
           />
         </Reveal>

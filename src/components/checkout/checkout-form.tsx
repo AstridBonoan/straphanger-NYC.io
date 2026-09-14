@@ -69,9 +69,9 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
 
   if (lines.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-[#0c0c0c]/15 bg-white/50 px-6 py-16 text-center">
+      <div className="rounded-2xl border border-dashed border-[#0A0A0A]/15 bg-white/50 px-6 py-16 text-center">
         <h2 className="font-display text-xl font-semibold">Nothing to checkout</h2>
-        <p className="mt-2 text-sm text-[#0c0c0c]/60">
+        <p className="mt-2 text-sm text-[#0A0A0A]/60">
           Add products to your bag before continuing.
         </p>
         <Link href="/shop" className={cn(buttonVariants(), "mt-6 inline-flex")}>
@@ -162,7 +162,7 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
       className="grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start"
       noValidate
     >
-      <div className="space-y-8 rounded-2xl border border-[#0c0c0c]/10 bg-white p-6 md:p-8">
+      <div className="space-y-8 rounded-2xl border border-[#0A0A0A]/10 bg-white p-6 md:p-8">
         <section className="space-y-4">
           <h2 className="font-display text-lg font-semibold">Contact</h2>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -269,14 +269,14 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
         <section className="space-y-4">
           <div className="flex items-center justify-between gap-3">
             <h2 className="font-display text-lg font-semibold">Payment</h2>
-            <span className="inline-flex items-center gap-1.5 text-xs text-[#0c0c0c]/50">
+            <span className="inline-flex items-center gap-1.5 text-xs text-[#0A0A0A]/50">
               <Lock className="size-3.5" aria-hidden="true" />
               Demo checkout
             </span>
           </div>
-          <p className="text-sm text-[#0c0c0c]/60">
+          <p className="text-sm text-[#0A0A0A]/60">
             Use Stripe test card{" "}
-            <span className="font-medium text-[#0c0c0c]">4242 4242 4242 4242</span>,
+            <span className="font-medium text-[#0A0A0A]">4242 4242 4242 4242</span>,
             any future expiry, and any CVC.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -295,7 +295,7 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
               <Label htmlFor="payment.cardNumber">Card number</Label>
               <div className="relative">
                 <CreditCard
-                  className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-[#0c0c0c]/35"
+                  className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-[#0A0A0A]/35"
                   aria-hidden="true"
                 />
                 <Controller
@@ -377,7 +377,7 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
         ) : null}
       </div>
 
-      <aside className="sticky top-24 space-y-6 rounded-2xl border border-[#0c0c0c]/10 bg-white p-6 shadow-sm">
+      <aside className="sticky top-24 space-y-6 rounded-2xl border border-[#0A0A0A]/10 bg-white p-6 shadow-sm">
         <h2 className="font-display text-lg font-semibold">Order summary</h2>
         <ul className="space-y-3 text-sm">
           {lines.map((line) => (
@@ -385,9 +385,9 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
               key={`${line.productId}-${line.variantId}`}
               className="flex justify-between gap-3"
             >
-              <span className="text-[#0c0c0c]/70">
+              <span className="text-[#0A0A0A]/70">
                 {line.name}{" "}
-                <span className="text-[#0c0c0c]/45">
+                <span className="text-[#0A0A0A]/45">
                   ({line.color}/{line.size}) × {line.quantity}
                 </span>
               </span>
@@ -397,13 +397,13 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
             </li>
           ))}
         </ul>
-        <dl className="space-y-2 border-t border-[#0c0c0c]/10 pt-4 text-sm">
+        <dl className="space-y-2 border-t border-[#0A0A0A]/10 pt-4 text-sm">
           <div className="flex justify-between">
-            <dt className="text-[#0c0c0c]/60">Subtotal</dt>
+            <dt className="text-[#0A0A0A]/60">Subtotal</dt>
             <dd className="tabular-nums">{formatPrice(summary.subtotalCents)}</dd>
           </div>
           <div className="flex justify-between">
-            <dt className="text-[#0c0c0c]/60">Shipping</dt>
+            <dt className="text-[#0A0A0A]/60">Shipping</dt>
             <dd className="tabular-nums">
               {summary.shippingCents === 0
                 ? "Free"
@@ -411,10 +411,10 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
             </dd>
           </div>
           <div className="flex justify-between">
-            <dt className="text-[#0c0c0c]/60">Tax</dt>
+            <dt className="text-[#0A0A0A]/60">Tax</dt>
             <dd className="tabular-nums">{formatPrice(summary.taxCents)}</dd>
           </div>
-          <div className="flex justify-between border-t border-[#0c0c0c]/10 pt-2 text-base font-semibold">
+          <div className="flex justify-between border-t border-[#0A0A0A]/10 pt-2 text-base font-semibold">
             <dt>Total</dt>
             <dd className="tabular-nums">{formatPrice(summary.totalCents)}</dd>
           </div>
@@ -430,7 +430,7 @@ export function CheckoutForm({ defaultEmail = "", defaultName = "" }: Props) {
             `Pay ${formatPrice(summary.totalCents)}`
           )}
         </Button>
-        <p className="text-center text-xs text-[#0c0c0c]/50">
+        <p className="text-center text-xs text-[#0A0A0A]/50">
           No real charges on the GitHub Pages demo. Card details stay in your browser.
         </p>
       </aside>

@@ -183,7 +183,7 @@ export function ProductFilters({
       </div>
 
       <div className="flex flex-col gap-2">
-        <span className="text-sm font-medium text-[#0c0c0c]">Price</span>
+        <span className="text-sm font-medium text-[#0A0A0A]">Price</span>
         <div className="flex items-center gap-3">
           <Input
             type="number"
@@ -199,7 +199,7 @@ export function ProductFilters({
               )
             }
           />
-          <span className="text-[#0c0c0c]/40">–</span>
+          <span className="text-[#0A0A0A]/40">–</span>
           <Input
             type="number"
             inputMode="numeric"
@@ -219,7 +219,7 @@ export function ProductFilters({
 
       {availableSizes.length > 0 ? (
         <fieldset className="flex flex-col gap-2">
-          <legend className="text-sm font-medium text-[#0c0c0c]">Size</legend>
+          <legend className="text-sm font-medium text-[#0A0A0A]">Size</legend>
           <div className="flex flex-wrap gap-2">
             {availableSizes.map((size) => (
               <button
@@ -228,10 +228,10 @@ export function ProductFilters({
                 aria-pressed={sizes.includes(size)}
                 onClick={() => handleSizeToggle(size)}
                 className={cn(
-                  "min-w-10 rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50",
+                  "min-w-10 rounded-md border px-2.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50",
                   sizes.includes(size)
-                    ? "border-[#0c0c0c] bg-[#0c0c0c] text-[#f4f4f2]"
-                    : "border-[#0c0c0c]/20 text-[#0c0c0c] hover:border-[#0c0c0c]/50",
+                    ? "border-[#0A0A0A] bg-[#0A0A0A] text-[#EDE6D6]"
+                    : "border-[#0A0A0A]/20 text-[#0A0A0A] hover:border-[#0A0A0A]/50",
                 )}
               >
                 {size === "ONE_SIZE" ? "OS" : size}
@@ -243,7 +243,7 @@ export function ProductFilters({
 
       {availableColors.length > 0 ? (
         <fieldset className="flex flex-col gap-2">
-          <legend className="text-sm font-medium text-[#0c0c0c]">Color</legend>
+          <legend className="text-sm font-medium text-[#0A0A0A]">Color</legend>
           <div className="flex flex-wrap gap-2.5">
             {availableColors.map(({ name, hex }) => (
               <button
@@ -254,13 +254,13 @@ export function ProductFilters({
                 aria-pressed={colors.includes(name.toLowerCase())}
                 onClick={() => handleColorToggle(name.toLowerCase())}
                 className={cn(
-                  "flex size-8 items-center justify-center rounded-full ring-1 ring-[#0c0c0c]/15 transition-all",
+                  "flex size-8 items-center justify-center rounded-full ring-1 ring-[#0A0A0A]/15 transition-all",
                   colors.includes(name.toLowerCase()) &&
-                    "ring-2 ring-offset-2 ring-[#0d5c63]",
+                    "ring-2 ring-offset-2 ring-[#FF4D00]",
                 )}
               >
                 <span
-                  className="size-5 rounded-full ring-1 ring-inset ring-[#0c0c0c]/10"
+                  className="size-5 rounded-full ring-1 ring-inset ring-[#0A0A0A]/10"
                   style={{ backgroundColor: hex }}
                 />
               </button>
@@ -269,12 +269,12 @@ export function ProductFilters({
         </fieldset>
       ) : null}
 
-      <label className="flex items-center gap-2.5 text-sm text-[#0c0c0c]">
+      <label className="flex items-center gap-2.5 text-sm text-[#0A0A0A]">
         <input
           type="checkbox"
           checked={inStock}
           onChange={handleInStockToggle}
-          className="size-4 rounded border-[#0c0c0c]/30 text-[#0d5c63] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50"
+          className="size-4 rounded border-[#0A0A0A]/30 text-[#FF4D00] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50"
         />
         In stock only
       </label>
@@ -292,7 +292,7 @@ export function ProductFilters({
     <>
       <div className="hidden lg:flex lg:flex-col lg:gap-6">
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0c0c0c]">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0A0A0A]">
             Filters
           </h2>
           <div className="w-40">
@@ -328,7 +328,7 @@ export function ProductFilters({
           <SlidersHorizontal className="size-4" aria-hidden="true" />
           Filters
           {activeFilterCount > 0 ? (
-            <span className="ml-1 flex size-4 items-center justify-center rounded-full bg-[#0d5c63] text-[10px] font-semibold text-white">
+            <span className="ml-1 flex size-4 items-center justify-center rounded-full bg-[#FF4D00] text-[10px] font-semibold text-white">
               {activeFilterCount}
             </span>
           ) : null}
@@ -356,7 +356,7 @@ export function ProductFilters({
           <button
             type="button"
             aria-label="Close filters"
-            className="absolute inset-0 bg-[#0c0c0c]/50"
+            className="absolute inset-0 bg-[#0A0A0A]/50"
             onClick={() => setMobileOpen(false)}
           />
           <div
@@ -364,10 +364,10 @@ export function ProductFilters({
             role="dialog"
             aria-modal="true"
             aria-label="Filters"
-            className="absolute inset-y-0 left-0 flex w-full max-w-xs flex-col gap-6 overflow-y-auto bg-[#f4f4f2] p-6 shadow-xl"
+            className="absolute inset-y-0 left-0 flex w-full max-w-xs flex-col gap-6 overflow-y-auto bg-[#EDE6D6] p-6 shadow-xl"
           >
             <div className="flex items-center justify-between">
-              <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0c0c0c]">
+              <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#0A0A0A]">
                 Filters
               </h2>
               <Button

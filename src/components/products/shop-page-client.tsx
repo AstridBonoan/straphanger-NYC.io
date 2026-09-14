@@ -139,11 +139,11 @@ function ShopCatalog() {
   return (
     <>
       <Container className="flex flex-col gap-2 pb-8">
-        <h1 className="font-display text-3xl font-bold tracking-tight text-[#0c0c0c] sm:text-4xl">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-[#0A0A0A] sm:text-4xl">
           Shop All
         </h1>
-        <p className="text-sm text-[#0c0c0c]/60">
-          {total} {total === 1 ? "product" : "products"}
+        <p className="text-sm text-[#0A0A0A]/60">
+          {total} {total === 1 ? "piece" : "pieces"} on the platform
         </p>
       </Container>
       <Container className="grid gap-10 lg:grid-cols-[240px_1fr] lg:items-start lg:gap-14">
@@ -168,7 +168,7 @@ export function ShopPageClient() {
       <Suspense
         fallback={
           <Container>
-            <div className="h-40 animate-pulse rounded-xl bg-[#0c0c0c]/5" />
+            <div className="h-40 animate-pulse rounded-xl bg-[#0A0A0A]/5" />
           </Container>
         }
       >

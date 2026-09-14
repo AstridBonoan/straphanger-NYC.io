@@ -26,8 +26,8 @@ export const ORDER_STATUS_LABELS: Record<OrderStatus, string> = {
 };
 
 const STATUS_BADGE_CLASSES: Record<OrderStatus, string> = {
-  pending: "bg-[#0c0c0c]/8 text-[#0c0c0c]/70",
-  paid: "bg-[#0d5c63]/12 text-[#0d5c63]",
+  pending: "bg-[#0A0A0A]/8 text-[#0A0A0A]/70",
+  paid: "bg-[#FF4D00]/12 text-[#FF4D00]",
   processing: "bg-blue-500/10 text-blue-700",
   shipped: "bg-indigo-500/10 text-indigo-700",
   delivered: "bg-green-600/10 text-green-700",
@@ -84,7 +84,7 @@ export function OrderStatusSelect({ orderId, initialStatus, onStatusChange }: Or
         ))}
       </Select>
       {changed ? (
-        <p className="text-xs text-[#0d5c63]">
+        <p className="text-xs text-[#FF4D00]">
           Updated locally — demo mode doesn&apos;t persist status changes.
         </p>
       ) : null}

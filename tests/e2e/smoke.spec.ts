@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test.describe("storefront smoke", () => {
   test("homepage loads with brand", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("link", { name: /B&C/i }).first()).toBeVisible();
+    await expect(page.getByRole("link", { name: /straphanger/i }).first()).toBeVisible();
   });
 
   test("shop search filters products via query param", async ({ page }) => {

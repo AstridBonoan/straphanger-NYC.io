@@ -33,21 +33,21 @@ export default function AdminOrderViewClient() {
       />
 
       <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
-        <div className="overflow-hidden rounded-lg border border-[#0c0c0c]/10 bg-white">
+        <div className="overflow-hidden rounded-lg border border-[#0A0A0A]/10 bg-white">
           <table className="w-full text-left text-sm">
             <thead>
-              <tr className="border-b border-[#0c0c0c]/10 text-xs uppercase tracking-wide text-[#0c0c0c]/50">
+              <tr className="border-b border-[#0A0A0A]/10 text-xs uppercase tracking-wide text-[#0A0A0A]/50">
                 <th className="px-4 py-3 font-medium">Item</th>
                 <th className="px-4 py-3 font-medium">Qty</th>
                 <th className="px-4 py-3 text-right font-medium">Line total</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[#0c0c0c]/8">
+            <tbody className="divide-y divide-[#0A0A0A]/8">
               {(order.items ?? []).map((item) => (
                 <tr key={item.id}>
                   <td className="px-4 py-3">
                     <p className="font-medium">{item.product_name}</p>
-                    <p className="text-xs text-[#0c0c0c]/50">
+                    <p className="text-xs text-[#0A0A0A]/50">
                       {item.color} / {item.size}
                     </p>
                   </td>
@@ -62,28 +62,28 @@ export default function AdminOrderViewClient() {
         </div>
 
         <aside className="space-y-4">
-          <div className="rounded-lg border border-[#0c0c0c]/10 bg-white p-4">
+          <div className="rounded-lg border border-[#0A0A0A]/10 bg-white p-4">
             <h2 className="text-sm font-semibold">Status</h2>
             <div className="mt-3">
               <OrderStatusSelect orderId={order.id} initialStatus={order.status} />
             </div>
           </div>
-          <div className="rounded-lg border border-[#0c0c0c]/10 bg-white p-4 text-sm">
+          <div className="rounded-lg border border-[#0A0A0A]/10 bg-white p-4 text-sm">
             <h2 className="font-semibold">Totals</h2>
             <dl className="mt-3 space-y-2">
               <div className="flex justify-between">
-                <dt className="text-[#0c0c0c]/55">Subtotal</dt>
+                <dt className="text-[#0A0A0A]/55">Subtotal</dt>
                 <dd className="tabular-nums">{formatPrice(order.subtotal_cents)}</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-[#0c0c0c]/55">Shipping</dt>
+                <dt className="text-[#0A0A0A]/55">Shipping</dt>
                 <dd className="tabular-nums">{formatPrice(order.shipping_cents)}</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-[#0c0c0c]/55">Tax</dt>
+                <dt className="text-[#0A0A0A]/55">Tax</dt>
                 <dd className="tabular-nums">{formatPrice(order.tax_cents)}</dd>
               </div>
-              <div className="flex justify-between border-t border-[#0c0c0c]/10 pt-2 font-semibold">
+              <div className="flex justify-between border-t border-[#0A0A0A]/10 pt-2 font-semibold">
                 <dt>Total</dt>
                 <dd className="tabular-nums">{formatPrice(order.total_cents)}</dd>
               </div>

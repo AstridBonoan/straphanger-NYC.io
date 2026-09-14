@@ -38,20 +38,20 @@ export function LoginForm() {
   };
 
   return (
-    <div className="w-full max-w-md rounded-xl border border-[#0c0c0c]/10 bg-white p-8 shadow-sm">
+    <div className="w-full max-w-md rounded-xl border border-[#0A0A0A]/10 bg-white p-8 shadow-sm">
       <div className="mb-6 text-center">
         <Link href="/" className="inline-flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-[#0d5c63] text-sm font-bold text-white">
-            AC
+          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-[#FF4D00] text-sm font-bold text-[#0A0A0A]">
+            SH
           </span>
-          <span className="text-base font-semibold text-[#0c0c0c]">
-            B&C Merch Store
+          <span className="text-base font-semibold text-[#0A0A0A]">
+            Straphanger NYC
           </span>
         </Link>
-        <h1 className="mt-4 text-xl font-semibold text-[#0c0c0c]">Sign in</h1>
-        <p className="mt-1 text-sm text-[#0c0c0c]/60">
+        <h1 className="mt-4 text-xl font-semibold text-[#0A0A0A]">Sign in</h1>
+        <p className="mt-1 text-sm text-[#0A0A0A]/60">
           Demo mode — no password required. Sign in as{" "}
-          <span className="font-medium text-[#0c0c0c]">{DEMO_ADMIN_EMAIL}</span>{" "}
+          <span className="font-medium text-[#0A0A0A]">{DEMO_ADMIN_EMAIL}</span>{" "}
           for admin dashboard access.
         </p>
       </div>
@@ -96,10 +96,10 @@ export function LoginForm() {
         </Button>
       </form>
 
-      <div className="mt-6 flex items-center gap-3 text-[11px] font-medium uppercase tracking-wide text-[#0c0c0c]/40">
-        <span className="h-px flex-1 bg-[#0c0c0c]/10" />
+      <div className="mt-6 flex items-center gap-3 text-[11px] font-medium uppercase tracking-wide text-[#0A0A0A]/40">
+        <span className="h-px flex-1 bg-[#0A0A0A]/10" />
         Quick demo access
-        <span className="h-px flex-1 bg-[#0c0c0c]/10" />
+        <span className="h-px flex-1 bg-[#0A0A0A]/10" />
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-3">
@@ -129,9 +129,9 @@ export function LoginForm() {
         </Button>
       </div>
 
-      <p className="mt-6 text-center text-sm text-[#0c0c0c]/60">
+      <p className="mt-6 text-center text-sm text-[#0A0A0A]/60">
         Need an account?{" "}
-        <Link href="/signup/" className="font-medium text-[#0d5c63] hover:underline">
+        <Link href="/signup/" className="font-medium text-[#FF4D00] hover:underline">
           Sign up
         </Link>
       </p>

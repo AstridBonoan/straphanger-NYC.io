@@ -103,7 +103,7 @@ export function WishlistView() {
         {Array.from({ length: 3 }).map((_, i) => (
           <div
             key={i}
-            className="aspect-[3/4] animate-pulse rounded-xl bg-[#0c0c0c]/5"
+            className="aspect-[3/4] animate-pulse rounded-xl bg-[#0A0A0A]/5"
           />
         ))}
       </div>
@@ -112,11 +112,11 @@ export function WishlistView() {
 
   if (products.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-[#0c0c0c]/15 bg-white/50 px-6 py-20 text-center">
-        <Heart className="size-12 text-[#0c0c0c]/25" aria-hidden="true" />
+      <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-[#0A0A0A]/15 bg-white/50 px-6 py-20 text-center">
+        <Heart className="size-12 text-[#0A0A0A]/25" aria-hidden="true" />
         <div>
           <h2 className="font-display text-xl font-semibold">Wishlist is empty</h2>
-          <p className="mt-2 text-sm text-[#0c0c0c]/60">
+          <p className="mt-2 text-sm text-[#0A0A0A]/60">
             Save products from the shop to revisit them later.
           </p>
         </div>

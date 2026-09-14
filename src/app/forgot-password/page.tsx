@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function ForgotPasswordPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[#f4f4f2] px-4 py-12">
-      <div className="w-full max-w-md rounded-xl border border-[#0c0c0c]/10 bg-white p-8 shadow-sm">
+    <div className="flex min-h-screen items-center justify-center bg-[#EDE6D6] px-4 py-12">
+      <div className="w-full max-w-md rounded-xl border border-[#0A0A0A]/10 bg-white p-8 shadow-sm">
         <div className="mb-6 text-center">
           <h1 className="text-xl font-semibold">Reset password</h1>
-          <p className="mt-1 text-sm text-[#0c0c0c]/60">
+          <p className="mt-1 text-sm text-[#0A0A0A]/60">
             In demo mode, password reset is simulated. With Supabase Auth enabled,
             this sends a recovery email.
           </p>
@@ -27,7 +27,7 @@ export default function ForgotPasswordPage() {
           <Button type="submit">Send reset link</Button>
         </form>
         <p className="mt-6 text-center text-sm">
-          <Link href="/login" className="text-[#0d5c63] hover:underline">
+          <Link href="/login" className="text-[#FF4D00] hover:underline">
             Back to sign in
           </Link>
         </p>

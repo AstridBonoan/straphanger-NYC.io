@@ -31,9 +31,9 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
   return (
     <Link
       href={`/product/${product.slug}`}
-      className="group flex flex-col rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50 focus-visible:ring-offset-2"
+      className="group flex flex-col rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2"
     >
-      <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-[#0c0c0c]/[0.04]">
+      <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-[#0A0A0A]/[0.04]">
         {primaryImage ? (
           <ProductImage
             src={primaryImage.url}
@@ -48,8 +48,8 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
             )}
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(135deg,#0c0c0c_0%,#0d5c63_55%,#0c0c0c_100%)]">
-            <span className="font-display text-lg font-bold text-[#f4f4f2]/85">
+          <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(135deg,#0A0A0A_0%,#FF4D00_55%,#0A0A0A_100%)]">
+            <span className="font-display text-lg font-bold text-[#EDE6D6]/85">
               {initials}
             </span>
           </div>
@@ -70,22 +70,22 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           {hasDiscount ? <Badge>Sale</Badge> : null}
         </div>
         {!inStock ? (
-          <div className="absolute inset-0 flex items-end bg-[#0c0c0c]/10 p-3">
+          <div className="absolute inset-0 flex items-end bg-[#0A0A0A]/10 p-3">
             <Badge variant="muted">Sold out</Badge>
           </div>
         ) : null}
       </div>
 
       <div className="mt-4 flex flex-1 flex-col gap-1.5">
-        <h3 className="text-sm font-semibold leading-snug text-[#0c0c0c] transition-colors group-hover:text-[#0d5c63]">
+        <h3 className="text-sm font-semibold leading-snug text-[#0A0A0A] transition-colors group-hover:text-[#FF4D00]">
           {product.name}
         </h3>
         <div className="flex items-center gap-2 text-sm">
-          <span className="font-medium text-[#0c0c0c]">
+          <span className="font-medium text-[#0A0A0A]">
             {formatPrice(product.price_cents)}
           </span>
           {hasDiscount ? (
-            <span className="text-[#0c0c0c]/40 line-through">
+            <span className="text-[#0A0A0A]/40 line-through">
               {formatPrice(product.compare_at_cents as number)}
             </span>
           ) : null}
@@ -96,12 +96,12 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
               <span
                 key={color}
                 title={color}
-                className="size-2.5 rounded-full ring-1 ring-[#0c0c0c]/15"
+                className="size-2.5 rounded-full ring-1 ring-[#0A0A0A]/15"
                 style={{ backgroundColor: hex }}
               />
             ))}
             {colors.length > 5 ? (
-              <span className="text-xs text-[#0c0c0c]/45">+{colors.length - 5}</span>
+              <span className="text-xs text-[#0A0A0A]/45">+{colors.length - 5}</span>
             ) : null}
           </div>
         ) : null}

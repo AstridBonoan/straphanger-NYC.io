@@ -16,7 +16,7 @@ export default function CheckoutCancelPage() {
         <h1 className="font-display text-3xl font-bold tracking-tight md:text-4xl">
           Checkout cancelled
         </h1>
-        <p className="mt-3 text-sm text-[#0c0c0c]/65">
+        <p className="mt-3 text-sm text-[#0A0A0A]/65">
           Your payment was not completed. Your bag is still available if you want
           to try again.
         </p>

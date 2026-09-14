@@ -54,15 +54,15 @@ export function SiteHeader() {
         className={cn(
           "sticky top-0 z-40 w-full border-b transition-all duration-300",
           scrolled
-            ? "border-[#0c0c0c]/10 bg-[#f4f4f2]/85 backdrop-blur-md"
-            : "border-transparent bg-[#f4f4f2]",
+            ? "border-[#0A0A0A]/10 bg-[#EDE6D6]/85 backdrop-blur-md"
+            : "border-transparent bg-[#EDE6D6]",
         )}
       >
         <Container className="flex h-16 items-center justify-between gap-4 sm:h-20">
           <Link
             href="/"
             className="inline-flex shrink-0 items-center"
-            aria-label="B&C Merch Store home"
+            aria-label="Straphanger NYC home"
           >
             <BrandLogo
               variant="light"
@@ -83,8 +83,8 @@ export function SiteHeader() {
                   href={link.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-[#0d5c63]",
-                    active ? "text-[#0c0c0c]" : "text-[#0c0c0c]/70",
+                    "text-sm font-medium transition-colors hover:text-[#FF4D00]",
+                    active ? "text-[#0A0A0A]" : "text-[#0A0A0A]/70",
                   )}
                 >
                   {link.label}
@@ -98,7 +98,7 @@ export function SiteHeader() {
             <Link
               href="/account"
               aria-label="Account"
-              className="hidden size-10 items-center justify-center rounded-md text-[#0c0c0c]/80 transition-colors hover:bg-[#0c0c0c]/5 hover:text-[#0c0c0c] sm:inline-flex"
+              className="hidden size-10 items-center justify-center rounded-md text-[#0A0A0A]/80 transition-colors hover:bg-[#0A0A0A]/5 hover:text-[#0A0A0A] sm:inline-flex"
             >
               <User className="size-[18px]" aria-hidden="true" />
             </Link>
@@ -106,11 +106,11 @@ export function SiteHeader() {
               type="button"
               onClick={toggleCart}
               aria-label={`Open bag${badgeCount > 0 ? `, ${badgeCount} items` : ""}`}
-              className="relative inline-flex size-10 items-center justify-center rounded-md text-[#0c0c0c]/80 transition-colors hover:bg-[#0c0c0c]/5 hover:text-[#0c0c0c]"
+              className="relative inline-flex size-10 items-center justify-center rounded-md text-[#0A0A0A]/80 transition-colors hover:bg-[#0A0A0A]/5 hover:text-[#0A0A0A]"
             >
               <ShoppingBag className="size-[18px]" aria-hidden="true" />
               {badgeCount > 0 ? (
-                <span className="absolute right-1 top-1 flex size-4 items-center justify-center rounded-full bg-[#0d5c63] text-[10px] font-semibold text-white">
+                <span className="absolute right-1 top-1 flex size-4 items-center justify-center rounded-full bg-[#FF4D00] text-[10px] font-semibold text-white">
                   {badgeCount > 9 ? "9+" : badgeCount}
                 </span>
               ) : null}
@@ -120,7 +120,7 @@ export function SiteHeader() {
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               aria-expanded={mobileOpen}
-              className="inline-flex size-10 items-center justify-center rounded-md text-[#0c0c0c]/80 transition-colors hover:bg-[#0c0c0c]/5 hover:text-[#0c0c0c] md:hidden"
+              className="inline-flex size-10 items-center justify-center rounded-md text-[#0A0A0A]/80 transition-colors hover:bg-[#0A0A0A]/5 hover:text-[#0A0A0A] md:hidden"
             >
               <Menu className="size-[18px]" aria-hidden="true" />
             </button>
@@ -131,7 +131,7 @@ export function SiteHeader() {
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
         <SheetContent side="left" className="flex w-full max-w-xs flex-col gap-6">
           <SheetHeader className="flex-row items-center justify-between space-y-0">
-            <SheetTitle className="sr-only">B&C menu</SheetTitle>
+            <SheetTitle className="sr-only">Straphanger menu</SheetTitle>
             <BrandLogo variant="light" width={100} height={34} className="h-7 w-auto" />
           </SheetHeader>
 
@@ -146,7 +146,7 @@ export function SiteHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-md px-3 py-3 text-base font-medium text-[#0c0c0c] transition-colors hover:bg-[#0c0c0c]/5"
+                className="rounded-md px-3 py-3 text-base font-medium text-[#0A0A0A] transition-colors hover:bg-[#0A0A0A]/5"
               >
                 {link.label}
               </Link>
@@ -154,7 +154,7 @@ export function SiteHeader() {
             <Link
               href="/account"
               onClick={() => setMobileOpen(false)}
-              className="rounded-md px-3 py-3 text-base font-medium text-[#0c0c0c] transition-colors hover:bg-[#0c0c0c]/5"
+              className="rounded-md px-3 py-3 text-base font-medium text-[#0A0A0A] transition-colors hover:bg-[#0A0A0A]/5"
             >
               Account
             </Link>

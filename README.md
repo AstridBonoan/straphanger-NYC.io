@@ -1,8 +1,10 @@
-# B&C Merch Store
+# Straphanger NYC
 
-Premium streetwear e-commerce **demo** built for **B&C Software & Web**.
+New York streetwear merch **demo**.
 
-**Wear the brand. Build the culture.**
+**Hold on. We're moving.**
+
+Clothes for the ones hanging from the bar at 8am and 2am — Canal Street tees, delayed-train hoodies, and platform accessories packed in Brooklyn.
 
 ## Live demo (GitHub Pages)
 

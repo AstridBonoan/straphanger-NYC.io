@@ -129,19 +129,19 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
         {product.category ? (
-          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-[#0d5c63]">
+          <span className="text-xs font-semibold uppercase tracking-[0.24em] text-[#FF4D00]">
             {product.category.name}
           </span>
         ) : null}
-        <h1 className="font-display text-3xl font-bold tracking-tight text-[#0c0c0c] sm:text-4xl">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-[#0A0A0A] sm:text-4xl">
           {product.name}
         </h1>
         <div className="flex items-center gap-3">
-          <span className="text-lg font-semibold text-[#0c0c0c]">
+          <span className="text-lg font-semibold text-[#0A0A0A]">
             {formatPrice(unitPriceCents)}
           </span>
           {hasDiscount ? (
-            <span className="text-base text-[#0c0c0c]/40 line-through">
+            <span className="text-base text-[#0A0A0A]/40 line-through">
               {formatPrice(product.compare_at_cents as number)}
             </span>
           ) : null}
@@ -149,14 +149,14 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
         </div>
       </div>
 
-      <p className="text-balance text-[15px] leading-relaxed text-[#0c0c0c]/70">
+      <p className="text-balance text-[15px] leading-relaxed text-[#0A0A0A]/70">
         {product.description}
       </p>
 
       {colors.length > 0 ? (
         <fieldset className="flex flex-col gap-3">
-          <legend className="text-sm font-medium text-[#0c0c0c]">
-            Color{selectedColor ? <span className="text-[#0c0c0c]/50"> — {selectedColor}</span> : null}
+          <legend className="text-sm font-medium text-[#0A0A0A]">
+            Color{selectedColor ? <span className="text-[#0A0A0A]/50"> — {selectedColor}</span> : null}
           </legend>
           <div className="flex flex-wrap gap-2.5">
             {colors.map(([color, hex]) => (
@@ -168,12 +168,12 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
                 aria-label={color}
                 title={color}
                 className={cn(
-                  "flex size-9 items-center justify-center rounded-full ring-1 ring-[#0c0c0c]/15 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]",
-                  selectedColor === color && "ring-2 ring-offset-2 ring-[#0d5c63]",
+                  "flex size-9 items-center justify-center rounded-full ring-1 ring-[#0A0A0A]/15 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]",
+                  selectedColor === color && "ring-2 ring-offset-2 ring-[#FF4D00]",
                 )}
               >
                 <span
-                  className="size-6 rounded-full ring-1 ring-inset ring-[#0c0c0c]/10"
+                  className="size-6 rounded-full ring-1 ring-inset ring-[#0A0A0A]/10"
                   style={{ backgroundColor: hex }}
                 />
               </button>
@@ -184,7 +184,7 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
 
       {sizesForColor.length > 0 && !(sizesForColor.length === 1 && sizesForColor[0] === "ONE_SIZE") ? (
         <fieldset className="flex flex-col gap-3">
-          <legend className="text-sm font-medium text-[#0c0c0c]">Size</legend>
+          <legend className="text-sm font-medium text-[#0A0A0A]">Size</legend>
           <div className="flex flex-wrap gap-2">
             {sizesForColor.map((size) => {
               const variant = variants.find(
@@ -199,11 +199,11 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
                   onClick={() => setSelectedSize(size)}
                   aria-pressed={selectedSize === size}
                   className={cn(
-                    "min-w-11 rounded-md border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0d5c63]/50 focus-visible:ring-offset-2",
+                    "min-w-11 rounded-md border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2",
                     selectedSize === size
-                      ? "border-[#0c0c0c] bg-[#0c0c0c] text-[#f4f4f2]"
-                      : "border-[#0c0c0c]/20 text-[#0c0c0c] hover:border-[#0c0c0c]/50",
-                    !available && "cursor-not-allowed border-[#0c0c0c]/10 text-[#0c0c0c]/30 line-through hover:border-[#0c0c0c]/10",
+                      ? "border-[#0A0A0A] bg-[#0A0A0A] text-[#EDE6D6]"
+                      : "border-[#0A0A0A]/20 text-[#0A0A0A] hover:border-[#0A0A0A]/50",
+                    !available && "cursor-not-allowed border-[#0A0A0A]/10 text-[#0A0A0A]/30 line-through hover:border-[#0A0A0A]/10",
                   )}
                 >
                   {size === "ONE_SIZE" ? "One Size" : size}
@@ -215,12 +215,12 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
       ) : null}
 
       <div className="flex flex-col gap-3">
-        <span className="text-sm font-medium text-[#0c0c0c]" id="quantity-label">
+        <span className="text-sm font-medium text-[#0A0A0A]" id="quantity-label">
           Quantity
         </span>
         <div className="flex items-center gap-4">
           <div
-            className="flex items-center rounded-md border border-[#0c0c0c]/20"
+            className="flex items-center rounded-md border border-[#0A0A0A]/20"
             role="group"
             aria-labelledby="quantity-label"
           >
@@ -229,7 +229,7 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
               onClick={() => handleQuantityChange(quantity - 1)}
               disabled={quantity <= 1}
               aria-label="Decrease quantity"
-              className="flex size-10 items-center justify-center text-[#0c0c0c] transition-colors hover:bg-[#0c0c0c]/5 disabled:opacity-30"
+              className="flex size-10 items-center justify-center text-[#0A0A0A] transition-colors hover:bg-[#0A0A0A]/5 disabled:opacity-30"
             >
               <Minus className="size-4" aria-hidden="true" />
             </button>
@@ -241,13 +241,13 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
               onClick={() => handleQuantityChange(quantity + 1)}
               disabled={!activeVariant || quantity >= activeVariant.inventory_quantity}
               aria-label="Increase quantity"
-              className="flex size-10 items-center justify-center text-[#0c0c0c] transition-colors hover:bg-[#0c0c0c]/5 disabled:opacity-30"
+              className="flex size-10 items-center justify-center text-[#0A0A0A] transition-colors hover:bg-[#0A0A0A]/5 disabled:opacity-30"
             >
               <Plus className="size-4" aria-hidden="true" />
             </button>
           </div>
           {activeVariant && activeVariant.inventory_quantity <= 8 && variantInStock ? (
-            <span className="text-xs font-medium text-[#0d5c63]">
+            <span className="text-xs font-medium text-[#FF4D00]">
               Only {activeVariant.inventory_quantity} left
             </span>
           ) : null}
@@ -274,7 +274,7 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
           aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
         >
           <Heart
-            className={cn("size-4", isWishlisted && "fill-[#0d5c63] text-[#0d5c63]")}
+            className={cn("size-4", isWishlisted && "fill-[#FF4D00] text-[#FF4D00]")}
             aria-hidden="true"
           />
           {isWishlisted ? "Saved" : "Wishlist"}
@@ -287,15 +287,15 @@ export function ProductPurchasePanel({ product }: ProductPurchasePanelProps) {
         className={cn(
           "flex items-center gap-2 text-sm transition-opacity",
           statusMessage ? "opacity-100" : "opacity-0",
-          status === "error" ? "text-red-700" : "text-[#0d5c63]",
+          status === "error" ? "text-red-700" : "text-[#FF4D00]",
         )}
       >
         {status === "added" ? <Check className="size-4" aria-hidden="true" /> : null}
         <span>{statusMessage ?? "\u00A0"}</span>
       </div>
 
-      <div className="flex items-start gap-3 rounded-lg bg-[#0c0c0c]/[0.04] p-4 text-sm text-[#0c0c0c]/70">
-        <Truck className="mt-0.5 size-4 shrink-0 text-[#0d5c63]" aria-hidden="true" />
+      <div className="flex items-start gap-3 rounded-lg bg-[#0A0A0A]/[0.04] p-4 text-sm text-[#0A0A0A]/70">
+        <Truck className="mt-0.5 size-4 shrink-0 text-[#FF4D00]" aria-hidden="true" />
         {remainingUnderThreshold > 0 ? (
           <span>
             Add {formatPrice(remainingUnderThreshold)} more for free shipping.

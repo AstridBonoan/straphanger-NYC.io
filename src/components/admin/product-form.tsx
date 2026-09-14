@@ -50,13 +50,13 @@ const CheckboxField = React.forwardRef<
   return (
     <label
       htmlFor={id}
-      className="flex cursor-pointer items-center gap-2 rounded-md border border-[#0c0c0c]/10 px-3 py-2 text-sm text-[#0c0c0c] transition-colors hover:bg-[#0c0c0c]/[0.03]"
+      className="flex cursor-pointer items-center gap-2 rounded-md border border-[#0A0A0A]/10 px-3 py-2 text-sm text-[#0A0A0A] transition-colors hover:bg-[#0A0A0A]/[0.03]"
     >
       <input
         ref={ref}
         id={id}
         type="checkbox"
-        className={cn("h-4 w-4 rounded border-[#0c0c0c]/30 accent-[#0d5c63]", className)}
+        className={cn("h-4 w-4 rounded border-[#0A0A0A]/30 accent-[#FF4D00]", className)}
         {...props}
       />
       {label}
@@ -121,13 +121,13 @@ export function ProductForm({ mode, categories, product }: ProductFormProps) {
       onChange={() => setSubmitted(null)}
     >
       {submitted ? (
-        <div className="flex items-start gap-3 rounded-md border border-[#0d5c63]/25 bg-[#0d5c63]/8 px-4 py-3 text-sm text-[#0d5c63]">
+        <div className="flex items-start gap-3 rounded-md border border-[#FF4D00]/25 bg-[#FF4D00]/8 px-4 py-3 text-sm text-[#FF4D00]">
           <CircleCheck className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
           <div>
             <p className="font-medium">
               {mode === "create" ? `"${submitted.name}" validated.` : "Changes validated."}
             </p>
-            <p className="mt-0.5 text-[#0d5c63]/80">
+            <p className="mt-0.5 text-[#FF4D00]/80">
               Demo mode doesn&apos;t persist to a database — this form checked your
               input against the same schema the real admin API would use.
             </p>
@@ -135,7 +135,7 @@ export function ProductForm({ mode, categories, product }: ProductFormProps) {
         </div>
       ) : null}
 
-      <section className="grid gap-5 rounded-lg border border-[#0c0c0c]/10 bg-white p-5 sm:grid-cols-2">
+      <section className="grid gap-5 rounded-lg border border-[#0A0A0A]/10 bg-white p-5 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5 sm:col-span-2">
           <Label htmlFor="name">Name</Label>
           <Input id="name" {...register("name")} aria-invalid={!!errors.name} />
@@ -243,7 +243,7 @@ export function ProductForm({ mode, categories, product }: ProductFormProps) {
               />
             )}
           />
-          <p className="text-xs text-[#0c0c0c]/50">Comma-separated.</p>
+          <p className="text-xs text-[#0A0A0A]/50">Comma-separated.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-3 sm:col-span-2 sm:grid-cols-4">

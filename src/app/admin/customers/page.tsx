@@ -19,10 +19,10 @@ export default function AdminCustomersPage() {
         description={`${customers.length} customers in the demo store`}
       />
 
-      <div className="overflow-x-auto rounded-lg border border-[#0c0c0c]/10 bg-white">
+      <div className="overflow-x-auto rounded-lg border border-[#0A0A0A]/10 bg-white">
         <table className="w-full min-w-[680px] text-left text-sm">
           <thead>
-            <tr className="border-b border-[#0c0c0c]/10 text-xs uppercase tracking-wide text-[#0c0c0c]/50">
+            <tr className="border-b border-[#0A0A0A]/10 text-xs uppercase tracking-wide text-[#0A0A0A]/50">
               <th scope="col" className="px-4 py-3 font-medium">Customer</th>
               <th scope="col" className="px-4 py-3 font-medium">Location</th>
               <th scope="col" className="px-4 py-3 font-medium">Customer since</th>
@@ -30,28 +30,28 @@ export default function AdminCustomersPage() {
               <th scope="col" className="px-4 py-3 text-right font-medium">Total spent</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#0c0c0c]/8">
+          <tbody className="divide-y divide-[#0A0A0A]/8">
             {customers.map((customer) => (
               <tr key={customer.id}>
                 <td className="px-4 py-3">
                   <Link
                     href={`/admin/customers/${customer.id}`}
-                    className="font-medium text-[#0d5c63] hover:underline"
+                    className="font-medium text-[#FF4D00] hover:underline"
                   >
                     {customer.fullName}
                   </Link>
-                  <p className="text-xs text-[#0c0c0c]/50">{customer.email}</p>
+                  <p className="text-xs text-[#0A0A0A]/50">{customer.email}</p>
                 </td>
-                <td className="whitespace-nowrap px-4 py-3 text-[#0c0c0c]/70">
+                <td className="whitespace-nowrap px-4 py-3 text-[#0A0A0A]/70">
                   {customer.location}
                 </td>
-                <td className="whitespace-nowrap px-4 py-3 text-[#0c0c0c]/70">
+                <td className="whitespace-nowrap px-4 py-3 text-[#0A0A0A]/70">
                   {format(new Date(customer.createdAt), "MMM d, yyyy")}
                 </td>
-                <td className="whitespace-nowrap px-4 py-3 text-[#0c0c0c]/70">
+                <td className="whitespace-nowrap px-4 py-3 text-[#0A0A0A]/70">
                   {customer.orderCount}
                 </td>
-                <td className="whitespace-nowrap px-4 py-3 text-right font-medium text-[#0c0c0c]">
+                <td className="whitespace-nowrap px-4 py-3 text-right font-medium text-[#0A0A0A]">
                   {formatPrice(customer.totalSpentCents)}
                 </td>
               </tr>

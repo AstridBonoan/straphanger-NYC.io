@@ -57,13 +57,13 @@ function NavLinks({
             aria-current={active ? "page" : undefined}
             className={cn(
               "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
-              active && "bg-[#0d5c63] text-white",
+              active && "bg-[#FF4D00] text-white",
               !active &&
                 variant === "dark" &&
-                "text-[#f4f4f2]/70 hover:bg-white/10 hover:text-[#f4f4f2]",
+                "text-[#EDE6D6]/70 hover:bg-white/10 hover:text-[#EDE6D6]",
               !active &&
                 variant === "light" &&
-                "text-[#0c0c0c]/70 hover:bg-[#0c0c0c]/5 hover:text-[#0c0c0c]",
+                "text-[#0A0A0A]/70 hover:bg-[#0A0A0A]/5 hover:text-[#0A0A0A]",
             )}
           >
             <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -85,7 +85,7 @@ function SidebarFooter({
   const router = useRouter();
   return (
     <div className="space-y-3 border-t border-white/10 pt-4">
-      <div className={cn("px-3 text-xs", variant === "dark" ? "text-[#f4f4f2]/60" : "text-[#0c0c0c]/60")}>
+      <div className={cn("px-3 text-xs", variant === "dark" ? "text-[#EDE6D6]/60" : "text-[#0A0A0A]/60")}>
         <p className="font-medium text-inherit opacity-100">{session.name}</p>
         <p className="truncate">{session.email}</p>
       </div>
@@ -94,7 +94,7 @@ function SidebarFooter({
         variant="ghost"
         className={cn(
           "w-full justify-start gap-2",
-          variant === "dark" && "text-[#f4f4f2]/80 hover:bg-white/10 hover:text-white",
+          variant === "dark" && "text-[#EDE6D6]/80 hover:bg-white/10 hover:text-white",
         )}
         onClick={() => {
           clearClientSession();
@@ -108,7 +108,7 @@ function SidebarFooter({
         href="/"
         className={cn(
           "flex items-center gap-2 px-3 text-sm",
-          variant === "dark" ? "text-[#f4f4f2]/60 hover:text-white" : "text-[#0c0c0c]/60",
+          variant === "dark" ? "text-[#EDE6D6]/60 hover:text-white" : "text-[#0A0A0A]/60",
         )}
       >
         <Home className="h-4 w-4" aria-hidden="true" />
@@ -124,11 +124,11 @@ export function AdminSidebar({ session }: { session: DemoSession }) {
 
   return (
     <>
-      <aside className="hidden w-64 shrink-0 flex-col bg-[#0c0c0c] text-[#f4f4f2] lg:flex">
+      <aside className="hidden w-64 shrink-0 flex-col bg-[#0A0A0A] text-[#EDE6D6] lg:flex">
         <div className="flex h-full flex-col gap-6 px-4 py-6">
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-[#f4f4f2]/40">Admin</p>
-            <p className="mt-1 font-display text-lg font-semibold">B&C Merch</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-[#EDE6D6]/40">Admin</p>
+            <p className="mt-1 font-display text-lg font-semibold">Straphanger</p>
           </div>
           <NavLinks pathname={pathname} />
           <div className="mt-auto">
@@ -137,7 +137,7 @@ export function AdminSidebar({ session }: { session: DemoSession }) {
         </div>
       </aside>
 
-      <div className="flex items-center justify-between border-b border-[#0c0c0c]/10 bg-white px-4 py-3 lg:hidden">
+      <div className="flex items-center justify-between border-b border-[#0A0A0A]/10 bg-white px-4 py-3 lg:hidden">
         <p className="font-display text-base font-semibold">Admin</p>
         <Button
           type="button"
@@ -151,10 +151,10 @@ export function AdminSidebar({ session }: { session: DemoSession }) {
       </div>
 
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="left" className="w-[280px] bg-[#0c0c0c] p-0 text-[#f4f4f2]">
+        <SheetContent side="left" className="w-[280px] bg-[#0A0A0A] p-0 text-[#EDE6D6]">
           <SheetTitle className="sr-only">Admin navigation</SheetTitle>
           <div className="flex h-full flex-col gap-6 px-4 py-6">
-            <p className="font-display text-lg font-semibold">B&C Merch</p>
+            <p className="font-display text-lg font-semibold">Straphanger</p>
             <NavLinks pathname={pathname} onNavigate={() => setOpen(false)} />
             <div className="mt-auto">
               <SidebarFooter session={session} />

@@ -5,7 +5,7 @@ export default function AdminOrderViewPage() {
   return (
     <Suspense
       fallback={
-        <div className="py-10 text-sm text-[#0c0c0c]/55">Loading order…</div>
+        <div className="py-10 text-sm text-[#0A0A0A]/55">Loading order…</div>
       }
     >
       <AdminOrderViewClient />

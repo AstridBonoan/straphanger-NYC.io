@@ -22,7 +22,7 @@ export function ThumbnailImage({ src, alt, className, size = 40 }: ThumbnailImag
   return (
     <div
       className={cn(
-        "relative shrink-0 overflow-hidden rounded-md bg-[#0c0c0c]/5",
+        "relative shrink-0 overflow-hidden rounded-md bg-[#0A0A0A]/5",
         className,
       )}
       style={{ width: size, height: size }}

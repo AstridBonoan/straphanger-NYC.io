@@ -145,7 +145,7 @@ const orderSpecs: DemoOrderSpec[] = [
     }),
     lines: [
       { productId: "prod-classic-tee", color: "Black", size: "M", quantity: 2 },
-      { productId: "prod-core-hoodie", color: "Teal", size: "L", quantity: 1 },
+      { productId: "prod-core-hoodie", color: "Signal", size: "L", quantity: 1 },
     ],
   },
   {
@@ -183,7 +183,7 @@ const orderSpecs: DemoOrderSpec[] = [
       phone: "312-555-0187",
     }),
     lines: [
-      { productId: "prod-premium-pullover", color: "Bone", size: "M", quantity: 1 },
+      { productId: "prod-premium-pullover", color: "Concrete", size: "M", quantity: 1 },
     ],
   },
   {
@@ -202,7 +202,7 @@ const orderSpecs: DemoOrderSpec[] = [
     }),
     lines: [
       { productId: "prod-classic-cap", color: "Black", quantity: 1 },
-      { productId: "prod-tote", color: "Bone", quantity: 1 },
+      { productId: "prod-tote", color: "Concrete", quantity: 1 },
       { productId: "prod-mug", color: "Black", quantity: 1 },
     ],
   },
@@ -215,9 +215,9 @@ const orderSpecs: DemoOrderSpec[] = [
     shippingAddress: address({
       full_name: "Sam O'Connell",
       line1: "220 Riverside Ln",
-      city: "Portland",
-      state: "OR",
-      postal_code: "97201",
+      city: "Brooklyn",
+      state: "NY",
+      postal_code: "11237",
       phone: "503-555-0173",
     }),
     notes: "Please gift wrap — birthday present.",
@@ -274,7 +274,7 @@ const orderSpecs: DemoOrderSpec[] = [
       phone: "206-555-0122",
     }),
     notes: "Refunded — item arrived damaged.",
-    lines: [{ productId: "prod-snapback", color: "Teal", quantity: 1 }],
+    lines: [{ productId: "prod-snapback", color: "Signal", quantity: 1 }],
   },
 ];
 

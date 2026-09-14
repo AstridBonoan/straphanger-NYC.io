@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const SHOP_BTN =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-[#0c0c0c] text-[#f4f4f2] hover:bg-[#0c0c0c]/90 h-10 px-4 py-2 mt-6";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-[#0A0A0A] text-[#EDE6D6] hover:bg-[#0A0A0A]/90 h-10 px-4 py-2 mt-6";
 
 /**
  * Static order detail for GitHub Pages — no client React / no ?query soft-routing.
@@ -45,7 +45,7 @@ export default function OrderViewPage() {
       root.innerHTML =
         '<div class="py-16 text-center">' +
         '<h1 class="font-display text-2xl font-semibold">' + esc(title) + "</h1>" +
-        (detail ? '<p class="mt-2 text-sm text-[#0c0c0c]/60">' + esc(detail) + "</p>" : "") +
+        (detail ? '<p class="mt-2 text-sm text-[#0A0A0A]/60">' + esc(detail) + "</p>" : "") +
         '<a href="' + base + '/shop/" class="' + shopBtn + '">Continue shopping</a></div>';
     }
 
@@ -96,7 +96,7 @@ export default function OrderViewPage() {
       return (
         '<li class="flex justify-between gap-4 px-5 py-4 text-sm"><div>' +
         '<p class="font-medium">' + esc(item.product_name) + "</p>" +
-        '<p class="mt-1 text-[#0c0c0c]/55">' + esc(item.color) + " / " + esc(item.size) +
+        '<p class="mt-1 text-[#0A0A0A]/55">' + esc(item.color) + " / " + esc(item.size) +
         " · Qty " + esc(item.quantity) + "</p></div>" +
         '<p class="font-medium tabular-nums">' + money(item.line_total_cents) + "</p></li>"
       );
@@ -114,27 +114,27 @@ export default function OrderViewPage() {
     root.innerHTML =
       '<div class="py-10 md:py-16">' +
       '<div class="mb-8 flex items-end justify-between gap-4"><div>' +
-      '<p class="text-xs font-medium uppercase tracking-[0.2em] text-[#0d5c63]">Order</p>' +
+      '<p class="text-xs font-medium uppercase tracking-[0.2em] text-[#FF4D00]">Order</p>' +
       '<h1 class="mt-2 font-display text-3xl font-bold tracking-tight">' + esc(order.id) + "</h1>" +
-      '<p class="mt-1 text-sm capitalize text-[#0c0c0c]/60">' + esc(order.status) + " · " + esc(when) + "</p>" +
+      '<p class="mt-1 text-sm capitalize text-[#0A0A0A]/60">' + esc(order.status) + " · " + esc(when) + "</p>" +
       "</div>" +
-      '<a href="' + base + '/shop/" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-3 hover:bg-[#0c0c0c]/5">Back to shop</a>' +
+      '<a href="' + base + '/shop/" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-3 hover:bg-[#0A0A0A]/5">Back to shop</a>' +
       "</div>" +
       '<div class="grid gap-8 lg:grid-cols-[1fr_320px]">' +
-      '<ul class="divide-y divide-[#0c0c0c]/10 overflow-hidden rounded-2xl border border-[#0c0c0c]/10 bg-white">' +
-      (itemsHtml || '<li class="px-5 py-4 text-sm text-[#0c0c0c]/55">No line items.</li>') +
+      '<ul class="divide-y divide-[#0A0A0A]/10 overflow-hidden rounded-2xl border border-[#0A0A0A]/10 bg-white">' +
+      (itemsHtml || '<li class="px-5 py-4 text-sm text-[#0A0A0A]/55">No line items.</li>') +
       "</ul>" +
       '<aside class="space-y-6">' +
-      '<div class="rounded-2xl border border-[#0c0c0c]/10 bg-white p-5 text-sm">' +
+      '<div class="rounded-2xl border border-[#0A0A0A]/10 bg-white p-5 text-sm">' +
       '<h2 class="font-display text-base font-semibold">Totals</h2><dl class="mt-4 space-y-2">' +
-      '<div class="flex justify-between"><dt class="text-[#0c0c0c]/55">Subtotal</dt><dd class="tabular-nums">' + money(order.subtotal_cents) + "</dd></div>" +
-      '<div class="flex justify-between"><dt class="text-[#0c0c0c]/55">Shipping</dt><dd class="tabular-nums">' + money(order.shipping_cents) + "</dd></div>" +
-      '<div class="flex justify-between"><dt class="text-[#0c0c0c]/55">Tax</dt><dd class="tabular-nums">' + money(order.tax_cents) + "</dd></div>" +
-      '<div class="flex justify-between border-t border-[#0c0c0c]/10 pt-2 font-semibold"><dt>Total</dt><dd class="tabular-nums">' + money(order.total_cents) + "</dd></div>" +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Subtotal</dt><dd class="tabular-nums">' + money(order.subtotal_cents) + "</dd></div>" +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Shipping</dt><dd class="tabular-nums">' + money(order.shipping_cents) + "</dd></div>" +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Tax</dt><dd class="tabular-nums">' + money(order.tax_cents) + "</dd></div>" +
+      '<div class="flex justify-between border-t border-[#0A0A0A]/10 pt-2 font-semibold"><dt>Total</dt><dd class="tabular-nums">' + money(order.total_cents) + "</dd></div>" +
       "</dl></div>" +
-      '<div class="rounded-2xl border border-[#0c0c0c]/10 bg-white p-5 text-sm">' +
+      '<div class="rounded-2xl border border-[#0A0A0A]/10 bg-white p-5 text-sm">' +
       '<h2 class="font-display text-base font-semibold">Shipping</h2>' +
-      '<p class="mt-3 text-[#0c0c0c]/70">' + shipHtml + "</p></div>" +
+      '<p class="mt-3 text-[#0A0A0A]/70">' + shipHtml + "</p></div>" +
       "</aside></div></div>";
   } catch (e) {
     var el = document.getElementById("order-root");
@@ -148,7 +148,7 @@ export default function OrderViewPage() {
     <Container className="min-h-[50vh]">
       <div
         id="order-root"
-        className="py-16 text-center text-sm text-[#0c0c0c]/55"
+        className="py-16 text-center text-sm text-[#0A0A0A]/55"
         suppressHydrationWarning
       >
         Loading order…

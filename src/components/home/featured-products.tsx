@@ -13,9 +13,9 @@ export async function FeaturedProducts() {
       <Container className="flex flex-col gap-10">
         <Reveal>
           <SectionHeading
-            eyebrow="Fan Favorites"
+            eyebrow="Platform staples"
             title="Featured pieces"
-            description="The core lineup — clean silhouettes and considered details built for daily rotation."
+            description="The core lineup — tees, hoodies, and caps cut for the city, not the lookbook."
             cta={{ label: "Shop all", href: "/shop" }}
           />
         </Reveal>

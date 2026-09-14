@@ -13,7 +13,7 @@ export default function AccountWishlistPage() {
       <Container className="py-10 md:py-16">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#0d5c63]">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#FF4D00]">
               Account
             </p>
             <h1 className="mt-2 font-display text-3xl font-bold tracking-tight">

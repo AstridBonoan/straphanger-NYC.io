@@ -102,7 +102,7 @@ function DialogContent({
       <button
         type="button"
         aria-label="Close dialog"
-        className="absolute inset-0 bg-[#0c0c0c]/50"
+        className="absolute inset-0 bg-[#0A0A0A]/50"
         onClick={() => setOpen(false)}
       />
       <div
@@ -110,7 +110,7 @@ function DialogContent({
         aria-modal="true"
         aria-labelledby={titleId}
         className={cn(
-          "relative z-10 w-full max-w-lg rounded-lg border border-[#0c0c0c]/10 bg-[#f4f4f2] p-6 shadow-lg",
+          "relative z-10 w-full max-w-lg rounded-lg border border-[#0A0A0A]/10 bg-[#EDE6D6] p-6 shadow-lg",
           className,
         )}
         {...props}
@@ -152,7 +152,7 @@ function DialogTitle({
 }: React.HTMLAttributes<HTMLHeadingElement>) {
   return (
     <h2
-      className={cn("text-lg font-semibold tracking-tight text-[#0c0c0c]", className)}
+      className={cn("text-lg font-semibold tracking-tight text-[#0A0A0A]", className)}
       {...props}
     />
   );
@@ -163,7 +163,7 @@ function DialogDescription({
   ...props
 }: React.HTMLAttributes<HTMLParagraphElement>) {
   return (
-    <p className={cn("text-sm text-[#0c0c0c]/70", className)} {...props} />
+    <p className={cn("text-sm text-[#0A0A0A]/70", className)} {...props} />
   );
 }
 

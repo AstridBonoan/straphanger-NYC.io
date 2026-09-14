@@ -55,7 +55,7 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="relative w-full sm:max-w-xs">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#0c0c0c]/40" />
+          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[#0A0A0A]/40" />
           <Input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -64,21 +64,21 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
             aria-label="Search products"
           />
         </div>
-        <p className="text-sm text-[#0c0c0c]/50">
+        <p className="text-sm text-[#0A0A0A]/50">
           {filtered.length} of {products.length} products
         </p>
       </div>
 
       {notice ? (
-        <div className="rounded-md border border-[#0d5c63]/25 bg-[#0d5c63]/8 px-3 py-2 text-sm text-[#0d5c63]">
+        <div className="rounded-md border border-[#FF4D00]/25 bg-[#FF4D00]/8 px-3 py-2 text-sm text-[#FF4D00]">
           {notice}
         </div>
       ) : null}
 
-      <div className="overflow-x-auto rounded-lg border border-[#0c0c0c]/10 bg-white">
+      <div className="overflow-x-auto rounded-lg border border-[#0A0A0A]/10 bg-white">
         <table className="w-full min-w-[760px] text-left text-sm">
           <thead>
-            <tr className="border-b border-[#0c0c0c]/10 text-xs uppercase tracking-wide text-[#0c0c0c]/50">
+            <tr className="border-b border-[#0A0A0A]/10 text-xs uppercase tracking-wide text-[#0A0A0A]/50">
               <th scope="col" className="px-4 py-3 font-medium">Product</th>
               <th scope="col" className="px-4 py-3 font-medium">Price</th>
               <th scope="col" className="px-4 py-3 font-medium">Stock</th>
@@ -87,7 +87,7 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
               <th scope="col" className="px-4 py-3 text-right font-medium">Actions</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#0c0c0c]/8">
+          <tbody className="divide-y divide-[#0A0A0A]/8">
             {filtered.map((product) => {
               const stock = totalStock(product);
               const image = product.images?.find((img) => img.is_primary) ?? product.images?.[0];
@@ -97,21 +97,21 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
                     <div className="flex items-center gap-3">
                       <ThumbnailImage src={image?.url} alt="" />
                       <div className="min-w-0">
-                        <p className="truncate font-medium text-[#0c0c0c]">{product.name}</p>
-                        <p className="truncate text-xs text-[#0c0c0c]/50">
+                        <p className="truncate font-medium text-[#0A0A0A]">{product.name}</p>
+                        <p className="truncate text-xs text-[#0A0A0A]/50">
                           {product.category?.name ?? "Uncategorized"}
                         </p>
                       </div>
                     </div>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 text-[#0c0c0c]">
+                  <td className="whitespace-nowrap px-4 py-3 text-[#0A0A0A]">
                     {formatPrice(product.price_cents)}
                   </td>
                   <td className="whitespace-nowrap px-4 py-3">
                     <span
                       className={cn(
                         "font-medium",
-                        stock < 5 ? "text-amber-700" : "text-[#0c0c0c]",
+                        stock < 5 ? "text-amber-700" : "text-[#0A0A0A]",
                       )}
                     >
                       {stock}
@@ -121,7 +121,7 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
                     {product.is_featured ? (
                       <Badge variant="secondary">Featured</Badge>
                     ) : (
-                      <span className="text-[#0c0c0c]/30">—</span>
+                      <span className="text-[#0A0A0A]/30">—</span>
                     )}
                   </td>
                   <td className="whitespace-nowrap px-4 py-3">
@@ -155,7 +155,7 @@ export function ProductsTable({ products: initialProducts }: ProductsTableProps)
             })}
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-4 py-10 text-center text-sm text-[#0c0c0c]/50">
+                <td colSpan={6} className="px-4 py-10 text-center text-sm text-[#0A0A0A]/50">
                   No products match your search.
                 </td>
               </tr>

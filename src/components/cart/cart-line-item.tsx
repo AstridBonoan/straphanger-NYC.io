@@ -16,12 +16,12 @@ export function CartLineItem({ line }: { line: CartLine }) {
     <li className="flex gap-4 py-6 md:gap-6">
       <Link
         href={`/product/${line.slug}`}
-        className="relative size-24 shrink-0 overflow-hidden rounded-md bg-[#0c0c0c]/[0.04] md:size-28"
+        className="relative size-24 shrink-0 overflow-hidden rounded-md bg-[#0A0A0A]/[0.04] md:size-28"
       >
         <ProductImage
           src={line.imageUrl}
           alt={line.name}
-          fallbackLabel="B&C"
+          fallbackLabel="SH"
           fill
           sizes="112px"
           className="object-cover"
@@ -37,7 +37,7 @@ export function CartLineItem({ line }: { line: CartLine }) {
             >
               {line.name}
             </Link>
-            <p className="mt-1 text-sm text-[#0c0c0c]/55">
+            <p className="mt-1 text-sm text-[#0A0A0A]/55">
               {line.color} / {line.size}
             </p>
             <p className="mt-1 text-sm font-medium">
@@ -56,7 +56,7 @@ export function CartLineItem({ line }: { line: CartLine }) {
         </div>
 
         <div className="flex items-center justify-between gap-4">
-          <div className="inline-flex items-center rounded-md border border-[#0c0c0c]/15">
+          <div className="inline-flex items-center rounded-md border border-[#0A0A0A]/15">
             <Button
               type="button"
               variant="ghost"

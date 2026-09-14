@@ -4,8 +4,8 @@ import { productMatchesSearch } from "@/lib/products/search";
 
 describe("productMatchesSearch", () => {
   it("matches shirts without returning shorts", () => {
-    const tee = getSeedProductBySlug("bc-classic-tee");
-    const short = getSeedProductBySlug("bc-weekend-short");
+    const tee = getSeedProductBySlug("canal-street-tee");
+    const short = getSeedProductBySlug("boardwalk-short");
 
     expect(tee).toBeTruthy();
     expect(short).toBeTruthy();
@@ -15,7 +15,7 @@ describe("productMatchesSearch", () => {
   });
 
   it("matches hyphenated category tokens like t-shirts", () => {
-    const tee = getSeedProductBySlug("bc-signature-tee");
+    const tee = getSeedProductBySlug("after-hours-tee");
     expect(tee).toBeTruthy();
     expect(productMatchesSearch(tee!, "shirt")).toBe(true);
     expect(productMatchesSearch(tee!, "t-shirt")).toBe(true);

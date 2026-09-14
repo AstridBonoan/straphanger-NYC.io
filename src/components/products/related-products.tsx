@@ -20,7 +20,7 @@ export async function RelatedProducts({ product, limit = 4 }: RelatedProductsPro
   if (related.length === 0) return null;
 
   return (
-    <section className="border-t border-[#0c0c0c]/10 py-16 sm:py-20">
+    <section className="border-t border-[#0A0A0A]/10 py-16 sm:py-20">
       <Container className="flex flex-col gap-10">
         <SectionHeading eyebrow="Keep exploring" title="You may also like" />
         <ProductGrid products={related} />

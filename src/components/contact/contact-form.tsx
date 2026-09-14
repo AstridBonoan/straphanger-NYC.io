@@ -31,13 +31,13 @@ export function ContactForm() {
     return (
       <div
         role="status"
-        className="flex flex-col items-center gap-3 rounded-lg border border-[#0d5c63]/30 bg-[#0d5c63]/5 px-6 py-12 text-center"
+        className="flex flex-col items-center gap-3 rounded-lg border border-[#FF4D00]/30 bg-[#FF4D00]/5 px-6 py-12 text-center"
       >
-        <span className="flex size-11 items-center justify-center rounded-full bg-[#0d5c63] text-white">
+        <span className="flex size-11 items-center justify-center rounded-full bg-[#FF4D00] text-white">
           <Check className="size-5" aria-hidden="true" />
         </span>
-        <h2 className="text-lg font-semibold text-[#0c0c0c]">Message sent</h2>
-        <p className="max-w-sm text-sm text-[#0c0c0c]/60">
+        <h2 className="text-lg font-semibold text-[#0A0A0A]">Message sent</h2>
+        <p className="max-w-sm text-sm text-[#0A0A0A]/60">
           Thanks for reaching out — our team typically replies within one business
           day.
         </p>

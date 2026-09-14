@@ -54,7 +54,7 @@ const customers: DemoCustomer[] = [
     fullName: "Sam O'Connell",
     email: "sam.oconnell@example.com",
     phone: "503-555-0173",
-    location: "Portland, OR",
+    location: "Ridgewood, NY",
     createdAt: "2026-06-30T10:00:00.000Z",
   },
   {

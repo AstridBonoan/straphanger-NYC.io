@@ -77,14 +77,14 @@ export function NavSearch({
         placeholder="Search merch…"
         onChange={(event) => setValue(event.target.value)}
         className={cn(
-          "h-10 w-full rounded-md border border-[#0c0c0c]/15 bg-white py-2 pl-3 pr-10 text-sm text-[#0c0c0c] outline-none transition-colors placeholder:text-[#0c0c0c]/40 focus-visible:border-[#0d5c63]/50 focus-visible:ring-2 focus-visible:ring-[#0d5c63]/30",
+          "h-10 w-full rounded-md border border-[#0A0A0A]/15 bg-white py-2 pl-3 pr-10 text-sm text-[#0A0A0A] outline-none transition-colors placeholder:text-[#0A0A0A]/40 focus-visible:border-[#FF4D00]/50 focus-visible:ring-2 focus-visible:ring-[#FF4D00]/30",
           inputClassName,
         )}
       />
       <button
         type="submit"
         aria-label="Search"
-        className="absolute right-1 inline-flex size-8 items-center justify-center rounded-md text-[#0c0c0c]/55 transition-colors hover:bg-[#0c0c0c]/5 hover:text-[#0c0c0c]"
+        className="absolute right-1 inline-flex size-8 items-center justify-center rounded-md text-[#0A0A0A]/55 transition-colors hover:bg-[#0A0A0A]/5 hover:text-[#0A0A0A]"
       >
         <Search className="size-4" aria-hidden="true" />
       </button>

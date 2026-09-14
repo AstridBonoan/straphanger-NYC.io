@@ -123,7 +123,7 @@ export const productVariantAdminSchema = z.object({
   colorHex: z
     .string()
     .trim()
-    .regex(/^#([0-9A-Fa-f]{6})$/, "Use a hex color like #0c0c0c."),
+    .regex(/^#([0-9A-Fa-f]{6})$/, "Use a hex color like #0A0A0A."),
   priceCents: z.number().int().positive().nullable().optional(),
   inventoryQuantity: z
     .number({ invalid_type_error: "Inventory is required." })
