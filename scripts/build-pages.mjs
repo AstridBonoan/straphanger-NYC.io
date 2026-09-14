@@ -7,14 +7,17 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const apiDir = path.join(root, "src", "app", "api");
 const apiStashDir = path.join(root, ".pages-build-stash", "api");
 
+const defaultBasePath = "/straphanger-NYC.io";
+const defaultSiteUrl = "https://astridbonoan.github.io/straphanger-NYC.io";
+
 const env = {
   ...process.env,
   STATIC_EXPORT: "true",
   GITHUB_PAGES: "true",
   NEXT_PUBLIC_DEMO_MODE: "true",
   DEMO_MODE: "true",
-  NEXT_PUBLIC_BASE_PATH: "/b-c-merchstore.io-",
-  NEXT_PUBLIC_SITE_URL: "https://astridbonoan.github.io/b-c-merchstore.io-",
+  NEXT_PUBLIC_BASE_PATH: process.env.NEXT_PUBLIC_BASE_PATH || defaultBasePath,
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || defaultSiteUrl,
 };
 
 async function stashApiRoutes() {

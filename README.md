@@ -10,7 +10,7 @@ Clothes for the ones hanging from the bar at 8am and 2am — Canal Street tees, 
 
 Public demo URL:
 
-**https://astridbonoan.github.io/b-c-merchstore.io-/**
+**https://astridbonoan.github.io/straphanger-NYC.io/**
 
 Hosted with **GitHub Pages → Deploy from branch (`gh-pages`)**. No Vercel login required for visitors.
 
@@ -32,8 +32,8 @@ Next.js (static export) · React · TypeScript · Tailwind CSS · Zustand · Zod
 ## Local development
 
 ```bash
-git clone https://github.com/AstridBonoan/b-c-merchstore.io-.git
-cd b-c-merchstore.io-
+git clone https://github.com/AstridBonoan/straphanger-NYC.io.git
+cd straphanger-NYC.io
 npm install
 cp .env.example .env.local
 # For local `npm run dev`, leave NEXT_PUBLIC_BASE_PATH empty/unset
@@ -66,7 +66,7 @@ npm run test
 
 Pushing to `main` runs `.github/workflows/pages.yml`, which:
 
-1. Builds the static export with base path `/b-c-merchstore.io-`
+1. Builds the static export with base path `/straphanger-NYC.io`
 2. Publishes the `out/` folder to the `gh-pages` branch
 
 Manual run: Actions → **Deploy GitHub Pages** → Run workflow.

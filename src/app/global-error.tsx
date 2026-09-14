@@ -1,5 +1,7 @@
 "use client";
 
+import { getBasePath } from "@/lib/paths";
+
 /**
  * Last-resort UI when the App Router root crashes.
  * Hard links use the Pages basePath so Home never soft-routes.
@@ -10,7 +12,7 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
-  const base = "/b-c-merchstore.io-";
+  const base = getBasePath();
   return (
     <html lang="en">
       <body

@@ -9,7 +9,7 @@ const isStaticExport =
   process.env.GITHUB_PAGES === "true";
 
 const basePath = isStaticExport
-  ? (process.env.NEXT_PUBLIC_BASE_PATH || "/b-c-merchstore.io-").replace(/\/$/, "") ||
+  ? (process.env.NEXT_PUBLIC_BASE_PATH || "/straphanger-NYC.io").replace(/\/$/, "") ||
     ""
   : "";
 

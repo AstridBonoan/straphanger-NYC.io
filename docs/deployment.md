@@ -14,7 +14,7 @@ The public portfolio demo is static and hosted on GitHub Pages so anyone can vis
 
 Public URL:
 
-`https://astridbonoan.github.io/b-c-merchstore.io-/`
+`https://astridbonoan.github.io/straphanger-NYC.io/`
 
 ### Automatic deploys
 
