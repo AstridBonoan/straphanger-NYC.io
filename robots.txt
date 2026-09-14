@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /account/
+Disallow: /admin/
+
+Sitemap: https://astridbonoan.github.io/straphanger-NYC.io/sitemap.xml

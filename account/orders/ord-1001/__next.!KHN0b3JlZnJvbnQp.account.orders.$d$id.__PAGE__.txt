@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[32490,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js","/straphanger-NYC.io/_next/static/chunks/34tp5s4bmj82t.js","/straphanger-NYC.io/_next/static/chunks/1925ek62icvpl.js","/straphanger-NYC.io/_next/static/chunks/1_qw45f975_pe.js","/straphanger-NYC.io/_next/static/chunks/0doa45ykrbbv_.js"],"AccountOrderDetailClient"]
+3:I[97367,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"orderId":"ord-1001"}],[["$","script","script-0",{"src":"/straphanger-NYC.io/_next/static/chunks/0doa45ykrbbv_.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"SeRznNWwl7-I0zSO74nNM"}
+5:null

@@ -1,0 +1,151 @@
+1:"$Sreact.fragment"
+2:I[39756,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+3:I[37457,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"default"]
+4:I[22016,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js","/straphanger-NYC.io/_next/static/chunks/1rxncug86bump.js"],""]
+a:I[63491,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js","/straphanger-NYC.io/_next/static/chunks/296ll30jux222.js"],"default"]
+:HL["/straphanger-NYC.io/_next/static/chunks/3w_30-98e1mx6.css","style"]
+:HL["/straphanger-NYC.io/_next/static/media/03fc1b4a8d284b5e-s.p.0wiir8udbzjvx.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/straphanger-NYC.io/_next/static/media/6ad1cda2f16975ee-s.p.2j22bd4n1tlhh.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","order",""],"q":"","i":false,"f":[[["",{"children":["(confirm)",{"children":["order",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/straphanger-NYC.io/_next/static/chunks/3w_30-98e1mx6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"oswald_939d22ee-module__RloZUG__variable ibm_plex_sans_d98d6973-module__J1jo6a__variable h-full antialiased","children":["$","body",null,{"className":"flex min-h-full flex-col bg-[#EDE6D6] text-[#0A0A0A]","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10 flex flex-col items-center gap-6 py-32 text-center","children":[["$","span",null,{"className":"text-xs font-semibold uppercase tracking-[0.3em] text-[#FF4D00]","children":"404"}],["$","h1",null,{"className":"font-display text-4xl font-bold tracking-tight text-[#0A0A0A] sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"max-w-md text-sm text-[#0A0A0A]/60","children":"The page you’re looking for doesn’t exist or has moved. Last stop — let’s get you back on the train."}],["$","div",null,{"className":"flex flex-wrap justify-center gap-3","children":[["$","$L4",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-[#0A0A0A] text-[#EDE6D6] hover:bg-[#0A0A0A]/90 h-11 rounded-md px-8","children":"Back home"}],["$","$L4",null,{"href":"/shop","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-[#0A0A0A]/20 bg-transparent hover:bg-[#0A0A0A]/5 text-[#0A0A0A] h-11 rounded-md px-8","children":"Shop all"}]]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/straphanger-NYC.io/_next/static/chunks/1rxncug86bump.js","async":true,"nonce":"$undefined"}]],["$","div",null,{"className":"flex min-h-full flex-col bg-[#EDE6D6] text-[#0A0A0A]","children":[["$","header",null,{"className":"border-b border-[#0A0A0A]/10 bg-[#EDE6D6]","children":["$","div",null,{"className":"mx-auto flex h-16 w-full max-w-7xl items-center px-5 sm:h-20 sm:px-8 lg:px-10","children":["$","$L4",null,{"href":"/","className":"inline-flex shrink-0 items-center","aria-label":"Straphanger NYC home","children":["$","svg",null,{"role":"img","aria-label":"Straphanger NYC","viewBox":"0 0 430 72","width":120,"height":40,"className":"h-7 w-auto sm:h-8","children":[["$","title",null,{"children":"Straphanger NYC"}],["$","g",null,{"fill":"none","children":[["$","rect",null,{"x":"6","y":"10","width":"40","height":"5","rx":"1","fill":"#0A0A0A"}],["$","path",null,{"d":"M19 15v18","stroke":"#0A0A0A","strokeWidth":"3.5","strokeLinecap":"square"}],["$","path",null,{"d":"M33 15v18","stroke":"#0A0A0A","strokeWidth":"3.5","strokeLinecap":"square"}],["$","rect",null,{"x":"14","y":"31","width":"24","height":"20","rx":"10","stroke":"#0A0A0A","strokeWidth":"3.5"}]]}],["$","text",null,{"x":"58","y":"48","fill":"#0A0A0A","fontFamily":"Oswald, 'Arial Narrow', Impact, sans-serif","fontSize":"34","fontWeight":"700","letterSpacing":"2.4","children":"STRAPHANGER"}],["$","rect",null,{"x":"352","y":"24","width":"68","height":"26","fill":"#FF4D00"}],["$","text",null,{"x":"386","y":"43","textAnchor":"middle","fill":"#0A0A0A","fontFamily":"Oswald, 'Arial Narrow', Impact, sans-serif","fontSize":"14","fontWeight":"700","letterSpacing":"2.5","children":"NYC"}]]}]}]}]}],"$L5"]}]]}],{"children":["$L6",{"children":["$L7",{},null,false,null]},null,false,"$@8"]},null,false,null]},null,false,null],"$L9",false]],"m":"$undefined","G":["$a",["$Lb"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"SeRznNWwl7-I0zSO74nNM"}
+c:I[79520,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js","/straphanger-NYC.io/_next/static/chunks/1rxncug86bump.js","/straphanger-NYC.io/_next/static/chunks/1z6x88ihszho0.js"],""]
+11:I[97367,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+13:I[97367,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+14:"$Sreact.suspense"
+5:["$","main",null,{"className":"flex-1","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10 flex flex-col items-center gap-6 py-32 text-center","children":[["$","span",null,{"className":"text-xs font-semibold uppercase tracking-[0.3em] text-[#FF4D00]","children":"404"}],["$","h1",null,{"className":"font-display text-4xl font-bold tracking-tight text-[#0A0A0A] sm:text-5xl","children":"Page not found"}],["$","p",null,{"className":"max-w-md text-sm text-[#0A0A0A]/60","children":"The page you’re looking for doesn’t exist or has moved. Last stop — let’s get you back on the train."}],["$","div",null,{"className":"flex flex-wrap justify-center gap-3","children":[["$","$L4",null,{"href":"/","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-[#0A0A0A] text-[#EDE6D6] hover:bg-[#0A0A0A]/90 h-11 rounded-md px-8","children":"Back home"}],["$","$L4",null,{"href":"/shop","className":"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF4D00]/50 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-[#0A0A0A]/20 bg-transparent hover:bg-[#0A0A0A]/5 text-[#0A0A0A] h-11 rounded-md px-8","children":"Shop all"}]]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+6:["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+d:T1660,
+(function () {
+  try {
+    var base = "/straphanger-NYC.io";
+    var shopBtn = "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-[#0A0A0A] text-[#EDE6D6] hover:bg-[#0A0A0A]/90 h-10 px-4 py-2 mt-6";
+    var successKey = "bc-merch-checkout-success";
+    var root = document.getElementById("order-root");
+    if (!root) return;
+
+    function money(cents) {
+      try {
+        return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format((Number(cents) || 0) / 100);
+      } catch (e) {
+        return "$" + ((Number(cents) || 0) / 100).toFixed(2);
+      }
+    }
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+    function showMissing(title, detail) {
+      root.innerHTML =
+        '<div class="py-16 text-center">' +
+        '<h1 class="font-display text-2xl font-semibold">' + esc(title) + "</h1>" +
+        (detail ? '<p class="mt-2 text-sm text-[#0A0A0A]/60">' + esc(detail) + "</p>" : "") +
+        '<a href="' + base + '/shop/" class="' + shopBtn + '">Continue shopping</a></div>';
+    }
+
+    var id = "";
+    var hash = (window.location.hash || "").replace(/^#/, "");
+    if (hash) {
+      if (hash.indexOf("id=") === 0 || hash.indexOf("&id=") !== -1) {
+        id = new URLSearchParams(hash).get("id") || "";
+      } else if (hash.indexOf("ord-") === 0 || hash.indexOf("order_") === 0) {
+        id = hash;
+      }
+    }
+    if (!id) {
+      try {
+        var rawSuccess = sessionStorage.getItem(successKey);
+        if (rawSuccess) {
+          var success = JSON.parse(rawSuccess);
+          if (success && success.orderId) id = String(success.orderId);
+        }
+      } catch (e) {}
+    }
+    id = (id || "").trim();
+    if (!id) {
+      showMissing("Missing order", "Open this page from your confirmation link after checkout.");
+      return;
+    }
+
+    var orders = [];
+    try {
+      var raw = localStorage.getItem("bc-merch-orders");
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) orders = parsed;
+      }
+    } catch (e) {}
+
+    var order = null;
+    for (var i = 0; i < orders.length; i++) {
+      if (orders[i] && orders[i].id === id) { order = orders[i]; break; }
+    }
+    if (!order) {
+      showMissing("Order not found", "This order isn't in this browser's saved demo orders.");
+      return;
+    }
+
+    var items = Array.isArray(order.items) ? order.items : [];
+    var itemsHtml = items.map(function (item) {
+      return (
+        '<li class="flex justify-between gap-4 px-5 py-4 text-sm"><div>' +
+        '<p class="font-medium">' + esc(item.product_name) + "</p>" +
+        '<p class="mt-1 text-[#0A0A0A]/55">' + esc(item.color) + " / " + esc(item.size) +
+        " · Qty " + esc(item.quantity) + "</p></div>" +
+        '<p class="font-medium tabular-nums">' + money(item.line_total_cents) + "</p></li>"
+      );
+    }).join("");
+
+    var ship = order.shipping_address;
+    var shipHtml = ship
+      ? esc(ship.full_name) + "<br/>" + esc(ship.line1) + "<br/>" +
+        esc(ship.city) + ", " + esc(ship.state) + " " + esc(ship.postal_code)
+      : "No shipping address on file.";
+    var when = "";
+    try { when = new Date(order.created_at).toLocaleString(); }
+    catch (e) { when = String(order.created_at || ""); }
+
+    root.innerHTML =
+      '<div class="py-10 md:py-16">' +
+      '<div class="mb-8 flex items-end justify-between gap-4"><div>' +
+      '<p class="text-xs font-medium uppercase tracking-[0.2em] text-[#FF4D00]">Order</p>' +
+      '<h1 class="mt-2 font-display text-3xl font-bold tracking-tight">' + esc(order.id) + "</h1>" +
+      '<p class="mt-1 text-sm capitalize text-[#0A0A0A]/60">' + esc(order.status) + " · " + esc(when) + "</p>" +
+      "</div>" +
+      '<a href="' + base + '/shop/" class="inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-3 hover:bg-[#0A0A0A]/5">Back to shop</a>' +
+      "</div>" +
+      '<div class="grid gap-8 lg:grid-cols-[1fr_320px]">' +
+      '<ul class="divide-y divide-[#0A0A0A]/10 overflow-hidden rounded-2xl border border-[#0A0A0A]/10 bg-white">' +
+      (itemsHtml || '<li class="px-5 py-4 text-sm text-[#0A0A0A]/55">No line items.</li>') +
+      "</ul>" +
+      '<aside class="space-y-6">' +
+      '<div class="rounded-2xl border border-[#0A0A0A]/10 bg-white p-5 text-sm">' +
+      '<h2 class="font-display text-base font-semibold">Totals</h2><dl class="mt-4 space-y-2">' +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Subtotal</dt><dd class="tabular-nums">' + money(order.subtotal_cents) + "</dd></div>" +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Shipping</dt><dd class="tabular-nums">' + money(order.shipping_cents) + "</dd></div>" +
+      '<div class="flex justify-between"><dt class="text-[#0A0A0A]/55">Tax</dt><dd class="tabular-nums">' + money(order.tax_cents) + "</dd></div>" +
+      '<div class="flex justify-between border-t border-[#0A0A0A]/10 pt-2 font-semibold"><dt>Total</dt><dd class="tabular-nums">' + money(order.total_cents) + "</dd></div>" +
+      "</dl></div>" +
+      '<div class="rounded-2xl border border-[#0A0A0A]/10 bg-white p-5 text-sm">' +
+      '<h2 class="font-display text-base font-semibold">Shipping</h2>' +
+      '<p class="mt-3 text-[#0A0A0A]/70">' + shipHtml + "</p></div>" +
+      "</aside></div></div>";
+  } catch (e) {
+    var el = document.getElementById("order-root");
+    if (el) {
+      el.innerHTML = '<div class="py-16 text-center"><h1 class="font-display text-2xl font-semibold">Unable to load order</h1></div>';
+    }
+  }
+})();7:["$","$1","c",{"children":[["$","div",null,{"className":"mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10 min-h-[50vh]","children":[["$","div",null,{"id":"order-root","className":"py-16 text-center text-sm text-[#0A0A0A]/55","suppressHydrationWarning":true,"children":"Loading order…"}],["$","$Lc",null,{"id":"order-view-fill","strategy":"afterInteractive","dangerouslySetInnerHTML":{"__html":"$d"}}]]}],["$Le"],"$Lf"]}]
+10:[]
+8:"$W10"
+9:["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","div",null,{"hidden":true,"children":["$","$L13",null,{"children":["$","$14",null,{"name":"Next.Metadata","children":"$L15"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+b:["$","link","0",{"rel":"stylesheet","href":"/straphanger-NYC.io/_next/static/chunks/3w_30-98e1mx6.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+16:I[97367,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+e:["$","script","script-0",{"src":"/straphanger-NYC.io/_next/static/chunks/1z6x88ihszho0.js","async":true,"nonce":"$undefined"}]
+f:["$","$L16",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0A0A0A"}]]
+18:I[27201,["/straphanger-NYC.io/_next/static/chunks/05-c3ty_6dwfk.js","/straphanger-NYC.io/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+15:[["$","title","0",{"children":"Order details | Straphanger NYC"}],["$","meta","1",{"name":"description","content":"Straphanger NYC is New York streetwear merch for the ride between stops — heavyweight tees, delayed-train hoodies, and accessories packed for the platform."}],["$","meta","2",{"name":"author","content":"Straphanger NYC"}],["$","meta","3",{"name":"keywords","content":"Straphanger NYC,New York streetwear,NYC merch,hoodies,t-shirts,subway streetwear"}],["$","meta","4",{"name":"creator","content":"Straphanger NYC"}],["$","meta","5",{"name":"robots","content":"noindex, nofollow"}],["$","meta","6",{"property":"og:title","content":"Straphanger NYC — Hold on. We're moving."}],["$","meta","7",{"property":"og:description","content":"New York streetwear merch — tees, hoodies, and accessories for the ones who never sit."}],["$","meta","8",{"property":"og:url","content":"https://astridbonoan.github.io/straphanger-NYC.io"}],["$","meta","9",{"property":"og:site_name","content":"Straphanger NYC"}],["$","meta","10",{"property":"og:locale","content":"en_US"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Straphanger NYC — Hold on. We're moving."}],["$","meta","14",{"name":"twitter:description","content":"New York streetwear merch — tees, hoodies, and accessories for the ones who never sit."}],["$","link","15",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link","16",{"rel":"icon","href":"/favicon.ico"}],["$","$L18","17",{}]]
+17:null
